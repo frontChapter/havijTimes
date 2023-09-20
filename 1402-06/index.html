@@ -1,0 +1,682 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>هویج تایمز | شهریور ۱۴۰۲</title><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../styles.css"><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="17a395bd-08cf-4032-bb82-54f1df8e9dd5" class="page sans"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/solid_beige.png" style="object-position:center 40%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🥕</span></div><h1 class="page-title">هویج تایمز | شهریور ۱۴۰۲</h1><p class="page-description"></p></header><div class="page-body"><div id="53d6affd-5440-458b-9384-e781ef32290e" class="column-list"><div id="2bb978c7-6916-41bc-ae09-46595f682893" style="width:50%" class="column"><h1 id="c1a9fb65-66b9-49d1-8934-64d603daea1b" class=""><a href="https://bun.sh/"><strong>جعبه ابزار افسانه‌ای! Bun ورژن یک، بسیار سریع تر از Node, Yarn, Jest</strong></a></h1><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="9bc4692d-660c-4e67-ae05-9e8978b2ef1d"><div style="font-size:1.5em"><span class="icon">✏️</span></div><div style="width:100%"><strong>تجربه‌ی من</strong><p id="650a8e74-a672-4526-833a-11a15f85869f" class="block-color-default">به عنوان یک توسعه دهنده‌ی فرانت‌اند در دنیای امروز ما از ابزارهای بسیاری همچون Webpack, Node, Yarn, Jest, TypeScript, React و مفاهیمی مثل SSR, CSR و… استفاده می‌کنیم. همه‌ی این‌ها در کنار ادیتور و مرورگر منابع زیادی را استفاده می‌کنند و حتی با کامپیوترهای نسبتا خوب ما کند به نظر می‌رسند. تجربه‌ی من با Bun پیش از نسخه‌ی یک بسیار خوشحال کننده بود و به عنوان یک توسعه‌دهنده از سریع بودن نصب پکیج‌ها و کاهش قابل لمس مصرف رم و سی‌پی‌یو بسیار لذت بخش بود. علاوه بر DX بهتر، Bun تا ۱۰ برابر در پروداکشن هم سریع تر از ابزارهای دیگر است! این ابزار یک Runtime, Package manager, Bundler, Test Runner و یک جعبه ابزار سریع همه کاره است!</p></div></figure><figure id="a9f6946c-f9a3-4011-aeed-d63be0f3aff3"><div class="source"><iframe width="560" height="315" src="https://www.youtube.com/embed/BsnCpESUEqM?si=Zi4aZyxHOczVoSWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></figure><ul id="9e1014c0-240b-4375-ac1e-093d9e4529ac" class="bulleted-list"><li style="list-style-type:disc"><a href="https://t.me/fullstacks_academy/178">https://t.me/fullstacks_academy/178</a></li></ul><ul id="ded6569b-2681-437b-a91b-560bdfadbf0c" class="bulleted-list"><li style="list-style-type:disc"><a href="https://twitter.com/mr_pouriya/status/1700818592281797086">https://twitter.com/mr_pouriya/status/1700818592281797086</a></li></ul><ul id="5bdc3232-c4d9-48e5-b9c0-381ed63e1eae" class="bulleted-list"><li style="list-style-type:disc"><a href="https://vercel.com/changelog/bun-install-is-now-supported-with-zero-configuration">https://vercel.com/changelog/bun-install-is-now-supported-with-zero-configuration</a></li></ul><p id="b03a91cf-5eac-4269-8539-ec0ae7dcb811" class="">
+</p></div><div id="0b09d105-133c-445e-a03d-8dab88239aec" style="width:50%" class="column"><h1 id="55f58470-13ca-4e19-8a86-ace8e3a12a2f" class=""><a href="https://sfd1402.azad-on.com/">روز آزادی نرم‌افزار آزادان</a></h1><p id="fc53fc4c-3ab9-481f-a832-eda5dcc5e78b" class=""><a href="https://fa.wikipedia.org/wiki/%D8%B1%D9%88%D8%B2_%D8%A2%D8%B2%D8%A7%D8%AF%DB%8C_%D9%86%D8%B1%D9%85%E2%80%8C%D8%A7%D9%81%D8%B2%D8%A7%D8%B1">جشن روز آزادی نرم‌افزار </a>همیشه یکی از رویدادهای جذاب دنیای نرم‌افزار بوده و هر ساله در سراسر دنیا گروه‌های مختلف این روز را برای قدردانی از <a href="https://www.gnu.org/philosophy/free-sw.fa.html">ایده‌ی نرم‌افزار آزاد</a> که نمود قابل لمس آزادی است جشن می‌گیرند. سال قبل این رویداد را به صورت آنلاین در فرانت‌چپتر نیز جشن گرفتیم. یکی از میزبان‌های امسال این رویداد در ایران، <a href="https://azad-on.com/">آزادان</a> است که در آخرین روز شهریور ماه با ارئه‌های جذاب به استقبال این روز رفته. ما ری‌اکت، ویو، نکست، وب‌پک، گیت، لینوکس و تمام نرم‌افزارهای بزرگی که به لطف جامعه توسعه پیدا کرده‌اند را به نوعی مدیون ایده‌ی <strong>نرم‌افزار آزاد</strong> هستیم.</p><h1 id="b0df4770-bd34-4092-b838-1d1f69d6aa4d" class=""><a href="https://nextjs.org/conf/ticket/ssshojaei">ثبت‌نام همایش آنلاین ورسل!</a></h1><p id="66225616-acb6-4bf7-a5a2-58a47e274fce" class="">ورسل امکان ثبت‌نام برای همایش آینده‌ی خودش در ۴ آبان (26 Obtober) رو باز کرده! خلاقیت‌های تیم ورسل در همایش ها همیشه برای من شگفت انگیز بوده و هر سری با خلاقیت‌هاشون لبخند نشسته روی لب‌هام. بعد از ثبت‌نام بهتون یه کارت دعوت میده که می‌تونید روش استیکرهای مختلف بچسبونید! اگر دوست داشتید با این <a href="https://nextjs.org/conf/ticket/ssshojaei">دعوت‌نامه‌ی من</a> هم می‌تونید شرکت کنید. می‌بینیم هم رو توی همایش ورسل.</p><h1 id="358c56ff-da4a-4f3e-8c52-d58d403451e2" class=""><a href="https://nextjs.org/blog/next-13-5">بروزرسانی تازه‌ی NextJS</a></h1><ul id="c7116d8c-edd7-4218-85de-ecae7199870b" class="bulleted-list"><li style="list-style-type:disc">22% faster local server startup</li></ul><ul id="c936d3fb-6298-4b36-9566-6cb79bdfdcac" class="bulleted-list"><li style="list-style-type:disc">29% faster HMR (Fast Refresh)</li></ul><ul id="3bf07a13-f4b9-4a70-9fb0-12f8fc782917" class="bulleted-list"><li style="list-style-type:disc">40% less memory usage</li></ul><ul id="13e54376-2a6c-4665-8b39-eeb4cca80d67" class="bulleted-list"><li style="list-style-type:disc">Optimized package imports</li></ul><ul id="ad3d25d1-50a3-49b1-8f87-4fb87f781337" class="bulleted-list"><li style="list-style-type:disc"><code>next/image</code> improvements</li></ul><ul id="3a21fabf-77c1-4817-a58f-8c01c91dace7" class="bulleted-list"><li style="list-style-type:disc">And over 438 bugs were patched</li></ul></div></div><hr id="0506aac7-47db-4ae1-8794-1409474086f2"/><h1 id="6689e10a-8ef5-426d-b424-777b1da1e416" class=""><a href="https://github.com/sys113/killua">لوکال استوریج منجمنت لایبری Killua</a></h1><p id="59dc57eb-9724-4f5e-97eb-cfce3a3c2e62" class="">با این پکیج می‌تونید به سادگی یه استیت گلوبال داشته باشید که با localstorage هم سینک هست و با ری‌فرش کردن صفحه همه چیز سر جاش باقی می‌مونه. جدا از تمام ویژگی‌های جذابی که یکی از اعضای <a href="https://t.me/FrontChapter/229">جامعه‌ی فرانت‌چپتر</a> شروعش کرده و چی بهتر از اینکه با کمک هم پکیج‌های خوب اینطوری بسازیم! حتما یه ستاره توی گیت‌هاب بهش بدید و امتحانش کنید</p><pre id="665f66d1-c9e8-4992-975e-a70fcc9f2939" class="code"><code>npm i killua</code></pre><div id="ea61e021-d130-46fb-b924-cace18542be5" class="column-list"><div id="45bd45ed-ca00-4e90-b0f4-f1b49fcb8855" style="width:50%" class="column"><ul id="8a027a27-64ae-43f7-9a28-cb677290690f" class="bulleted-list"><li style="list-style-type:disc">سازگار با تایپ اسکریپت</li></ul><ul id="53f76a08-a9c5-4d72-92d4-0da3952c9543" class="bulleted-list"><li style="list-style-type:disc">سازگار با سرور-ساید (مثلا نکست-جی اس اپ دایرکتوری)</li></ul><ul id="c25506f0-a669-4654-b065-770dc8f29fe5" class="bulleted-list"><li style="list-style-type:disc">تعریف reducer برای تغییرات بر روی دیتای داخل لوکال استوریج</li></ul><ul id="53b644d6-57f5-4447-af5e-17934de2958f" class="bulleted-list"><li style="list-style-type:disc">تعریف selector برای دسترسی بهتر به دیتای داخل لوکال استوریج</li></ul><ul id="216db311-ca1a-4dc6-b842-d81bec5b24c1" class="bulleted-list"><li style="list-style-type:disc">فایل کانفیگ برای مدیریت بهتر دیتای داخل لوکال استوریج</li></ul><ul id="37df13da-ada8-4bfc-8d3c-f606347ab396" class="bulleted-list"><li style="list-style-type:disc">انکریپت کردن دیتاهای داخل لوکال استوریج برای جلوگیری از بودن در دسترس یوزر و همچنین تغییر دادنش.
+</li></ul></div><div id="5e4cc85a-d7d6-4e6f-b123-724c15695edd" style="width:50%" class="column"><ul id="1353618f-ad71-4f43-8936-6ee803aa1cc8" class="bulleted-list"><li style="list-style-type:disc">گت کردن دیتا از لوکال استوریج</li></ul><ul id="6e169aa9-9d76-4d19-964d-16d674a42a07" class="bulleted-list"><li style="list-style-type:disc">ست کردن دیتا توی لوکال استوریج</li></ul><ul id="9a62f9f3-d0e8-4c60-88e3-3eefa981d9c2" class="bulleted-list"><li style="list-style-type:disc">آپدیت خودکار همه کامپوننت ها بعد از آپدیت شدن اون key داخل لوکال استوریج</li></ul><ul id="740161d3-9711-4185-b583-324d47d956c2" class="bulleted-list"><li style="list-style-type:disc">آپدیت خودکار همه تب ها بعد از آپدیت شدن اون key داخل لوکال استوریج</li></ul><ul id="5b6fc1f2-161a-4ff1-a2b1-afd3881a657f" class="bulleted-list"><li style="list-style-type:disc">تنظیم یک تایمر بر اساس دقیقه برای اکسپایر شدن و حذف اون key از لوکال استوریج (اختیاری)</li></ul><ul id="891d23a5-7727-4170-aa6b-da5972f41081" class="bulleted-list"><li style="list-style-type:disc">و ...</li></ul></div></div><p id="e5289187-6351-42df-a478-619c0232c971" class="">
+</p><h1 id="9b0d103f-207c-49f0-a17f-57f02adf3bc9" class=""><a href="https://v0.dev/">ورسل از Generative AI تازه‌ی خود، V0 رونمایی کرد!</a></h1><p id="188cdcc6-c408-4ae0-af64-53ca83b2fdc9" class="block-color-default">اخبار این ماه ورسل تمومی نداره! ابزار V0، مخلوق تازه‌ی شرکت ورسل یک چت بات برای ساخت رابط کاربری هست که می‌تونید هرچیزی نیاز دارید برایش توضیح دهید و کامپوننت React مناسب کپی-پیست ساخته شده با Tailwind و <a href="https://ui.shadcn.com/">Shadcn</a> را از آن تحویل بگیرید! فعلا برای استفاده از آن باید در صف انتظار بمانیم اما خروجی کسانی که از آن استفاده کرده‌اند در دسترس است</p><div id="2f118041-bc17-4218-b70f-e0772663c707" class="column-list"><div id="84f09b41-ac7c-49de-9e52-acba160f3217" style="width:50%" class="column"><h1 id="a3b0eadf-97dc-47a2-89a0-100ce7c3a7e8" class=""><a href="https://github.com/microsoft/TypeScript/issues/55486"> تایپ‌اسکریپت ۵.۳ منتشر شد!</a></h1><p id="0e9dc4e7-e59e-412c-9d7d-27b72e48c42a" class=""><a href="https://www.totaltypescript.com/typescript-5-3">https://www.totaltypescript.com/typescript-5-3</a></p><p id="849f4862-85c9-4c8c-82a7-db450f02682a" class=""><a href="https://bootcamp.uxdesign.cc/upcoming-improvements-in-typescript-5-3-97da4b3f0577">https://bootcamp.uxdesign.cc/upcoming-improvements-in-typescript-5-3-97da4b3f0577</a></p><h1 id="89098b65-8eb2-491a-8b4e-b40be658f2a6" class=""><a href="https://mantine.dev/changelog/7-0-0/">نسخه‌ی ۷ از Mantine</a></h1><p id="10483fd5-9682-4adb-b272-be0a20a09688" class="">کتابخانه‌ی mantine، مجموعه‌ی از کامپوننت‌های UI هست که با تمرکز روی تجربه‌ی برنامه‌نویس و کاربر نهایی ساخته شده. توی نسخه‌ی تازه وابستگی به Emotion رو برداشته و از CSS module استفاده می‌کنه. تغییرات بیشتر رو میشه از سایتش دنبال کرد</p><p id="8712ac0a-e86d-402a-9f46-ec73182a68e7" class="">
+</p></div><div id="6038cbbc-d17b-4dce-9740-95c2bc16ded5" style="width:50%" class="column"><h1 id="aef150d4-fbc4-4a8c-93d5-7b349c242974" class=""><a href="https://astro.build/blog/astro-3/">انتشار Astro نسخه‌ی 3</a></h1><ul id="427fddda-c449-4fef-aa7e-6c2f10e509ca" class="bulleted-list"><li style="list-style-type:disc">تا ۳۰٪ سریع تر از همیشه!</li></ul><ul id="30edf591-dbf4-4d44-9fd0-a3ee138d5121" class="bulleted-list"><li style="list-style-type:disc">انیمیشن جابه‌جایی بین صفحه‌ها</li></ul><ul id="8246b373-0ce0-458d-ac8c-9890ecd8cbf8" class="bulleted-list"><li style="list-style-type:disc">بهینه‌سازی تصاویر</li></ul><ul id="443d0669-d349-46ed-bb5c-cdc93caca7a3" class="bulleted-list"><li style="list-style-type:disc">بروزرسانی سریع JSX</li></ul><ul id="b12e80af-85ce-4566-9f88-d896f24b6bca" class="bulleted-list"><li style="list-style-type:disc">و بسیاری اتفاقات دیگر</li></ul><p id="b1971804-7006-49ee-b4d2-ccc174c7329e" class="block-color-default"><a href="https://twitter.com/astrodotbuild/status/1696900204853698767">https://twitter.com/astrodotbuild/status/1696900204853698767</a></p></div></div><h1 id="07a32cfc-913e-4f1c-a0f0-e42567cf8899" class=""><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/groupBy">پراپرتی آینده‌ی جاوااسکریپت: </a><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/groupBy"><strong>groupBy</strong></a></h1><p id="ff3f20f0-1631-4ea3-b6c7-2a8ceb06bd3c" class="">در نسخه‌ی ویژه‌ی توسعه‌دهندگان مرورگر کروم امکان استفاده از groupBy اضافه شده و در آینده این ویژگی توسط مرورگرهای مختلف پشتیبانی خواهد شد</p><p id="95576cf4-18f6-4faf-927c-acfdb968f477" class=""><a href="https://dmitripavlutin.com/javascript-array-group/">https://dmitripavlutin.com/javascript-array-group/</a></p><h1 id="b997d1b5-9377-4004-a3c5-db874030efc4" class=""><a href="https://devtoolstips.org/">با اولین ابزار کارت بیشتر آشنا شو</a></h1><p id="4e3acb3e-c2e0-4777-8ac0-4ffdcd7ffd44" class="">سایت DevToolStips نکات مفیدی رو درمورد DevTool کروم آموزش میده که هر توسعه‌دهنده‌ی فرانت‌اندی خوبه درموردش بدونه</p><p id="68ef635a-078b-4930-84d2-37e20bae877a" class=""><a href="https://t.me/frontChapterGroup/17147">https://t.me/frontChapterGroup/17147</a></p><h1 id="9d7d0c2f-913e-445c-a4a2-6d9ae1f073bf" class="">لینک‌های زیبای ماه:</h1><ul id="f62ebd1e-8751-47ed-8d84-082e03856c63" class="bulleted-list"><li style="list-style-type:disc"><strong><a href="https://www.fixmyresume.xyz/">مشاور رایگان رزومه!‌</a></strong></li></ul><p id="3592e311-a32e-400c-be87-674601773937" class="">با این ابزار می‌تونی به صورت آنلاین و رایگان رزومه‌ات رو آپلود کنی و با توجه به سمت شغلیت یه لیست کامل از نکات مثبت و نکاتی که می‌تونه بهتر بشه بهت میده و برات با هوش مصنوعی یه Cover Latter جذاب می‌نویسه.</p><ul id="6cff0117-b689-4ce6-9fad-4605be447ba8" class="bulleted-list"><li style="list-style-type:disc"><a href="https://github.com/codrops/ConnectedGrid/"><strong>یک گرید خلاقانه با CSS</strong></a></li></ul><p id="b44bf782-eaad-41b2-a214-b246c4730d2b" class="">همیشه دیدن کدهای خلاقانه بهم دید بهتری نسبت به ابزارهایی که باهاشون کار می‌کنم میده، این به چشمم جالب اومد.</p><p id="7b3546d2-8773-4a21-b5ef-622f0eb4bc16" class="">
+</p><h3 id="d39b82f9-229e-4d1b-920f-416a4cdca8da" class=""><mark class="highlight-purple">تهیه شده توسط:</mark></h3><p id="96bc5f8a-d354-4820-9879-bd412c7e3957" class=""><mark class="highlight-gray">امین، امیرحسین ماهر، مینا و </mark><a href="https://www.linkedin.com/in/ordinarysaleh/"><mark class="highlight-gray">صالح شجاعی</mark></a></p><hr id="5a9b7aae-b037-448f-a6e9-afd7e26aed6c"/><div id="250f1cee-9b7e-4d23-b750-ace3f8e19d51" class="column-list"><div id="ce902a0e-c076-4854-8a38-3ad321d0514b" style="width:25%" class="column"><p id="65c673ba-f2b1-496f-ab3b-3540deca2ebe" class=""><mark class="highlight-teal">آخر شهریور ماه ۱۴۰۲</mark></p></div><div id="7e36d9e1-3e1d-4789-a49a-dec1388796e7" style="width:25%" class="column"><p id="043f78d8-53f9-44e8-b7f1-75a14b313d3b" class=""><mark class="highlight-orange"><a href="https://frontchapter.ir/">سایت فرانت‌چپتر</a></mark></p></div><div id="c433bde3-eae5-46ca-a268-7a5682ef0151" style="width:25%" class="column"><p id="e2800e79-1fa4-4036-85c9-f6a66835d38c" class=""><mark class="highlight-orange"><a href="https://t.me/FrontChapter">کانال</a></mark><mark class="highlight-orange"> و </mark><mark class="highlight-orange"><a href="https://t.me/frontChapterGroup">گروه فرانت‌چپتر</a></mark></p></div><div id="465dd298-f44e-4bcb-85aa-f51c0d05fcdf" style="width:25%" class="column"><p id="f21045ec-ea1b-488d-a272-d5a91e4fd812" class=""><strong><a href="https://www.womenlifefreedom.com/"><mark class="highlight-red">زن زندگی آزادی</mark></a></strong></p></div></div><p id="20d1c4e3-5693-449d-8aac-f0fd7a115b6e" class="">
+</p></div></article></body></html>
