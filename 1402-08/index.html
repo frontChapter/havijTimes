@@ -1,0 +1,684 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>هویج تایمز | آبان ۱۴۰۲</title><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../styles.css"><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="431b337a-f224-4296-acfd-da619e7b63d8" class="page sans"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/solid_beige.png" style="object-position:center 40%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🥕</span></div><h1 class="page-title">هویج تایمز | آبان ۱۴۰۲</h1><p class="page-description"></p></header><div class="page-body"><h2 id="f384fd0a-ee9b-4aab-acec-dc5fd56a0178" class=""><a href="https://nextjs.org/blog/next-14">نکست ۱۴ به بار اومد!</a></h2><ul id="572a53ac-b48e-4597-a3c6-3cc1fa2024b4" class="bulleted-list"><li style="list-style-type:disc">سریع تر شدن قابل توجه turbopack</li></ul><ul id="c9b409a1-390b-4ad6-8e1b-b77c2b7f3e57" class="bulleted-list"><li style="list-style-type:disc">پایدار شدن Server actions</li></ul><ul id="dbb9cabc-6eb8-4430-acf6-7bea4ecff5f0" class="bulleted-list"><li style="list-style-type:disc">بروزرسانی NextJS Learn</li></ul><ul id="a0adc9ff-c5ca-4dee-a28c-5ce1facfc9c0" class="bulleted-list"><li style="list-style-type:disc">شیوه‌ی تازه‌ی رندر کردن | <a href="https://nextjs.org/blog/next-14#partial-prerendering-preview"><strong>Partial Prerendering</strong></a><strong> و </strong><a href="https://vercel.com/blog/partial-prerendering-with-next-js-creating-a-new-default-rendering-model"><strong>بلاگ نکست</strong></a></li></ul><h2 id="92c20c95-4123-4b88-a6b3-d2c94f1d517b" class=""><a href="https://blog.angular.io/introducing-angular-v17-4d7033312e4b">نسخه‌ی ۱۷ </a><a href="https://blog.angular.io/introducing-angular-v17-4d7033312e4b"><strong>Angular با تغییرات چشم گیر</strong></a></h2><p id="83f36c5d-5400-44f4-9908-b79ae7ad794b" class=""><a href="https://goo.gle/angular-event">https://goo.gle/angular-event</a></p><p id="e0b31522-7b54-4a73-92a3-280f84c828c1" class="">تولدی دوباره برای فریم‌ورک انگولار، از تغییر لوگو تا ویژگی‌های انقلابی دیگر</p><ul id="4b1bcb03-4e5e-4699-b661-691fc36ef0cd" class="bulleted-list"><li style="list-style-type:disc">لوگو و سایت جدید</li></ul><ul id="911f8f17-336c-4c99-92b1-af462986bb6d" class="bulleted-list"><li style="list-style-type:disc">بهبود سرعت به لطف vite و esbuild، پیشفرض</li></ul><ul id="c3150964-6681-44b6-b98f-1d1ca06bf96e" class="bulleted-list"><li style="list-style-type:disc">پیاده سازی ساده تر SSR</li></ul><ul id="779d340f-4852-4ce0-9399-5efd8571271a" class="bulleted-list"><li style="list-style-type:disc">خداحافظی با ngIf, ngFor, ngSwitch, etc و سلام به
+@if, @else, @for, @switch</li></ul><ul id="e02355db-0c91-45dd-8f2c-0b4f111adcf9" class="bulleted-list"><li style="list-style-type:disc">سینتکس جدید template، نسخه پیشرفته تر lazy load به نام
+@defer</li></ul><h2 id="27066e43-9d86-4910-8ea9-839c1c1013f9" class=""><a href="https://vitejs.dev/blog/announcing-vite5">تنوری دو ور خاش‌خاشی | Vite 5</a></h2><p id="ff3d0a1e-886f-42b6-a909-bf1ba1b979de" class="">از ورژن ۴ ویت یک سال میگذره و دانلود هفتگی ویت روی npm از ۲.۵ میلیون بار در هفته به ۷.۵ میلیون بار در هفته رسیده!</p><p id="76a1627f-188d-4611-8932-f223613e266d" class="">مهم‌ترین تغییراتش:</p><ul id="47f65fed-aab7-4262-94b2-9b33ecf3c765" class="bulleted-list"><li style="list-style-type:disc">سویچ به rollup 4</li></ul><ul id="a251ca3a-a2c7-472f-9076-55a10b186e4a" class="bulleted-list"><li style="list-style-type:disc">عدم پشتیبانی از nodeJS های قدیمی تر از 18</li></ul><ul id="948c5489-fec5-49ba-b0f1-5c0e93fad6e6" class="bulleted-list"><li style="list-style-type:disc">بهبود پرفورمنس</li></ul><p id="986c8b0f-dcca-4743-9c10-8eddb087fc16" class="">می‌تونید <a href="https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md#500-2023-11-16">changelog</a> بسیار بلند بالاش رو هم یه نگاه بندازید.</p><h2 id="a0cff7e7-d09d-416a-ab30-a566ed6d45e8" class=""><a href="https://www.youtube.com/watch?v=5ChkQKUzDCs">تایپ اسکریپت رو دور بریزیم؟</a></h2><p id="2ab5190a-c685-48bb-a6b8-8b23055078ea" class="">به تازگی پروژه‌های بزرگی مثل Turbo و Svelte تایپ‌اسکریپت رو کنار گذاشتند و با pure js پروژه‌ها رو ادامه میدن، اگر کنجکاو هستید چرا حتما ویدیوی لینک‌شده به تایتل رو ببینید و تا اطلاع ثانوی توی پروژه‌ها خودتون و شرکت از تایپ‌اسکریپت استفاده کنید.</p><h2 id="5fec5553-bf42-4adf-ad7e-a395648cfc95" class=""><a href="https://jsisweird.com/">جاوااسکریپت عجیبه</a></h2><p id="ac9ad370-0b36-4a38-ad3b-2dfd1addf5e1" class="">این سایت یه پروژه‌ی جالبه که ۲۵ تا سوال میپرسه ازتون و می‌تونید نکات جالبی رو ازش کشف کنید، هدفش هم اینه که بدونیم چرا جاوااسکریپت عجیبه و اگر بدونیم دیگه عجیب نیست.</p><h2 id="84e09148-666f-4788-a497-178b5c1f906c" class=""><a href="https://t.me/frontChapterGroup/19291">چک لیست پرفورمنس برای فرانت‌اند</a></h2><div id="a1df2d9a-133b-4297-9194-411c5ed5da10" class="column-list"><div id="c6329dfc-6aad-41ef-bd90-0aa456efa2ca" style="width:50%" class="column"><figure id="c1b52b1b-a434-4de1-a20f-571b9b6c70d4"><div class="source">https://github.com/ms-fadaei/Front-End-Performance-Checklist</div></figure></div><div id="4dbd2560-9e7d-4ede-8850-10ecef8da422" style="width:50%" class="column"><figure id="b84f2d7d-45eb-45c7-8879-a7ab029c5161"><div class="source">https://github.com/thedaviddias/Front-End-Performance-Checklist</div></figure></div></div><p id="b32d257f-de7e-43e4-b785-36ee40123502" class="">چک لیست پرفورمنس فرانت اند به صورت کلی:
+<a href="https://github.com/thedaviddias/Front-End-Performance-Checklist">https://github.com/thedaviddias/Front-End-Performance-Checklist</a></p><p id="f7235de9-4650-498e-94e3-7718cb23ee4d" class="">چک لیست پرفورمنس ری اکت:
+<a href="https://github.com/coryhouse/reactjsconsulting/issues/77">https://github.com/coryhouse/reactjsconsulting/issues/77</a></p><p id="4869b492-c1b2-401b-bd77-1e066779f5e2" class="">استفاده از React Devtools برای بررسی پرفورمنس:
+<a href="https://youtu.be/Qwb-Za6cBws?si=YvHsufY8q4wJ6zge">https://youtu.be/Qwb-Za6cBws?si=YvHsufY8q4wJ6zge</a></p><p id="194ad513-11c8-4015-9b64-4fffb41a2881" class="">استفاده از signal:
+<a href="https://youtu.be/SO8lBVWF2Y8?si=srKZbuy8Ig_fSOnz">https://youtu.be/SO8lBVWF2Y8?si=srKZbuy8Ig_fSOnz</a></p><p id="98869870-e020-4ebd-afa7-f85c95dc0388" class="">این مطلب هم جالبه
+<a href="https://web.dev/articles/rendering-performance">https://web.dev/articles/rendering-performance</a></p><h2 id="99c270a7-3d39-4bdf-a415-7ee7742c7e34" class=""><a href="https://www.linkedin.com/posts/hesanam_tips-softskills-seniordeveloper-activity-7128968194186170368-3JC5?utm_source=share&amp;utm_medium=member_desktop">نکاتی به سوی سینیوریتی</a></h2><p id="9955d938-2178-422a-b871-11a104a27589" class="">کیفیت های یه سنیور به سابقه کارش نیست، در عوض:</p><ul id="6e043a17-1f94-4cda-b8ff-4b54f75db02e" class="bulleted-list"><li style="list-style-type:disc">به اینه که بتونه مسئولیت کارش رو به عهده بگیره، بدون بهانه تراشی برای مشکلاتی که از پیش بوده</li></ul><ul id="f61846c3-2a4d-499f-b82a-0f7094d80aad" class="bulleted-list"><li style="list-style-type:disc">به اینه که بتونه روی دیگران با رفتار حرفه ایش تاثیر بذاره، که منجر به رشد تیم و سازمان بشه</li></ul><ul id="87e6810c-3021-474c-9f23-367f82f3c116" class="bulleted-list"><li style="list-style-type:disc">به اینه که بتونه ابعاد مختلف پروژه رو درنظر بگیره و در زمان مناسب راه حل مناسب رو پیش بگیره</li></ul><ul id="1fe50e84-fe14-485b-ba8c-576a6ecf0b44" class="bulleted-list"><li style="list-style-type:disc">به اینه که برای کاری که بهش سپرده شده،‌ Ownership کامل داشته باشه و قابل اتکا باشه</li></ul><ul id="9f5616a5-45f8-41a5-9316-3201e867f7c3" class="bulleted-list"><li style="list-style-type:disc">به اینه که بتونه زمان خودش و تیمش رو درست مدیریت کنه</li></ul><p id="e8014732-6e84-4f49-9438-cd903c83bdb4" class="">وگرنه صرف اینکه شما ۱۰ سال سابقه کار داشته باشی به عنوان سنیور شناخته نمیشی.</p><h2 id="2551ee0e-4af9-424a-97e9-ddfaa0009700" class=""><a href="https://www.locatorjs.com/">ابزار خدایان، LocatorJS</a></h2><p id="bcb451af-dfad-4476-b735-bc86b34d44d2" class="">گاهی وقتا واقعا inspect element کافی نیست و برای اینکه به کامپوننتی که دنبالش هستی برسی باید کلی سرچ کنی بین فایل‌ها و متن‌ها تا برسی بهش، با این ابزار وقتی روی یه کامپوننت کلیک کنی، کدش توی کدادیتور خودت برات باز میشه!</p><h2 id="737b4221-5316-4ae4-9305-d3ff8ccb6a55" class=""><a href="https://dev.to/usulpro/how-react-forget-will-make-react-usememo-and-usecallback-hooks-absolutely-redundant-4l68">چطور React Forget می‌تونه باعث کنارگذاشتن useMemo و useCallback بشه؟</a></h2><h2 id="ca3c56bd-5420-4a85-956d-f370e31d19d5" class="">پیشنهاد سرآشپز:</h2><div id="58765dbf-df37-4ea3-b84b-80186943c422" class="column-list"><div id="db249694-75f8-4ae8-876c-6f415532f6f2" style="width:50%" class="column"><p id="f951821f-32e1-472d-9b5a-f9cb9c029c37" class=""><a href="https://reactflow.dev/">https://reactflow.dev/</a></p><p id="cc9c2f90-8b7c-472b-a797-12331a281101" class=""><a href="https://purgecss.com/">https://purgecss.com/</a></p><p id="a114c2bd-a37f-4910-bd8b-982dee32ddd4" class=""><a href="https://unocss.dev/">https://unocss.dev</a></p><p id="fdabb6c4-b425-41c4-a2e4-4c8711374811" class=""><a href="https://github.com/rayepps/radash">https://github.com/rayepps/radash</a></p><p id="9ba253f6-2e02-422d-b104-dcae1fd46683" class=""><a href="https://modernfontstacks.com/">https://modernfontstacks.com/</a></p><p id="e5b0a3b8-154a-4c92-b8df-1ad369ca3f2d" class=""><a href="https://react-wrap-balancer.vercel.app/">https://react-wrap-balancer.vercel.app/</a></p></div><div id="cf3c0a59-8aac-4dcf-8a03-5dd64d440acf" style="width:50%" class="column"><p id="ec85af3e-8cf2-4326-aa63-0e05fece9d65" class="">درست کردن فلوهایی همچون miro و figJam با افکت‌های بسیار زیبا</p><p id="c1ac1ac7-7fb0-4181-8f93-43b62d161766" class="">حذف CSS های استفاده نشده و اضافی در پروژه در build time</p><p id="8957c524-5ff6-410c-bb6a-80edee69be51" class="">فراتر از tailwind و فراتر از آن | <a href="https://dev.to/mapleleaf/tailwindcss-vs-unocss-2a53">بیشتر بخوانید</a></p><p id="682b8775-5914-49ad-80af-2b0163fa0abd" class="">جعبه ابزار فانکشن‌های پر استفاده، تایپ اسکریپتی و بسیار سبک</p><p id="00f662aa-d812-4184-a927-2491ee81bdea" class="">تحولی در فونت‌های وب</p><p id="e77ab6fa-4eea-4705-8006-9367777ef456" class="">خوانا تر کردن عنوان‌ها با شکستن متن از جای متقارن تر</p></div></div><h3 id="35b11234-bcd8-4043-9512-dad265b3df67" class=""><mark class="highlight-purple">تهیه شده توسط:</mark></h3><p id="f547a70f-05ec-40e8-ade7-836e230f9804" class=""><a href="http://Sahebi.org">محمود صاحبی</a>، محمد ایزنلو، امیرحسین ماهر، مینا و <a href="https://www.linkedin.com/in/ordinarysaleh/"><mark class="highlight-gray">صالح شجاعی</mark></a></p><hr id="654bc09f-b390-4a45-bfb7-467bed687a1e"/><div id="0059d85a-bec2-4d8b-8faa-96492ee60c76" class="column-list"><div id="af9ddbd8-5d91-4e7d-aeea-fdfc0574ad79" style="width:25%" class="column"><p id="61b29b8f-837f-4c2a-b7f6-a9c9dafa60e6" class=""><mark class="highlight-teal">آخر آبان ماه ۱۴۰۲</mark></p></div><div id="fb9be3d5-a9af-42a1-8821-1393d164f80c" style="width:25%" class="column"><p id="849ba44d-fdde-46a4-aa99-3de548c0934e" class=""><mark class="highlight-orange"><a href="https://frontchapter.ir/">سایت فرانت‌چپتر</a></mark></p></div><div id="53392e05-c02c-441e-a2e0-e72822f4ff66" style="width:25%" class="column"><p id="404e7ff6-ff7d-421f-914c-91cc876ceb25" class=""><mark class="highlight-orange"><a href="https://t.me/FrontChapter">کانال</a></mark><mark class="highlight-orange"> و </mark><mark class="highlight-orange"><a href="https://t.me/frontChapterGroup">گروه فرانت‌چپتر</a></mark></p></div><div id="cfc7274a-1035-4c9a-9e74-39b4c32fd816" style="width:25%" class="column"><p id="9e282d9d-1967-4d09-872a-94fc5ea9a05b" class=""><strong><a href="https://www.womenlifefreedom.com/"><mark class="highlight-red">زن زندگی آزادی</mark></a></strong></p></div></div><p id="24d3b2f5-cd84-4a83-a1ef-282084bd3e03" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></html>
