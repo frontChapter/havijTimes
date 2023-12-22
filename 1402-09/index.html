@@ -1,0 +1,697 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>هویج تایمز | آذر ۱۴۰۲</title><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../styles.css"><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="431b337a-f224-4296-acfd-da619e7b63d8" class="page sans"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/solid_beige.png" style="object-position:center 40%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🥕</span></div><h1 class="page-title">هویج تایمز | آذر ۱۴۰۲</h1><p class="page-description"></p></header><div class="page-body"><h2 id="727c41a4-0ef2-4fcb-abc9-5326c26cf385" class="">نسخه فارسی و رسمی مستندات Vue.js</h2><p id="91f8c127-131b-428c-80f6-f5f3817973b1" class="">با اعلام ایوان یو، نسخه‌ی فارسی مستندات Vue.js بر روی سایت اصلی ویو قرار گرفت!</p><p id="c79db17a-dc4e-4255-b54d-e4fcdc75f11e" class=""><a href="http://fa.vuejs.org/">http://fa.vuejs.org/</a></p><p id="047ebc31-c542-4136-bde7-92aaeea8184d" class="">با تشکر ویژه از <a href="https://github.com/the-pesar">پسر</a>. لینک <a href="https://github.com/vuejs-translations/docs-fa">مخزن اصلی</a> ترجمه مستندات.</p><h2 id="9067c96f-9601-4089-931a-78e23f48012e" class="">یه روتر ری‌اکت پر از امکانات خوشمزه</h2><p id="eae4a15d-5de1-4d28-8fc5-76420a0089c8" class="">جدیدا Tanstack Router وارد فاز بتا شده (کاری از توسعه دهنده‌های لایبرری React Router)</p><p id="39cf001d-c3c8-4f4c-a5b5-06b07520f471" class=""><a href="https://tanstack.com/router/v1">https://tanstack.com/router/v1</a></p><ul id="adecd5db-54d9-4d58-839d-d57a7e2d78d7" class="bulleted-list"><li style="list-style-type:disc">روتینگ تایپ سیف (اگه ادرسی اشتباه وارد بشه ارور تایپ می‌گیرید)</li></ul><ul id="3a855fc6-d020-4f14-a5de-7887bf12ff88" class="bulleted-list"><li style="list-style-type:disc">دیتا فچینگ با روتر</li></ul><ul id="d88f201b-008a-4685-aee6-462808c7e9ef" class="bulleted-list"><li style="list-style-type:disc">پشتیبانی از Suspense</li></ul><ul id="1fbf66c0-eb2c-4a1f-9b40-1ac3aef58b6e" class="bulleted-list"><li style="list-style-type:disc">روتینگ با فایل سیستم</li></ul><ul id="690a7a74-6f56-4914-838e-f52429744415" class="bulleted-list"><li style="list-style-type:disc">روت‌های تودرتو به سبک Next13 و Remix</li></ul><p id="17302810-c840-4251-9b9a-22d1facea5f2" class="">اگر خواستید بیشتر باهاش آشنا شید این مقاله جالبه</p><p id="50063753-f4ed-40c9-80f8-ec5e7937caf2" class=""><a href="https://swizec.com/blog/tanstack-router-modern-react-for-the-rest-of-us/">https://swizec.com/blog/tanstack-router-modern-react-for-the-rest-of-us/</a></p><h2 id="019c6d2a-df95-4d23-bbd0-448393b6648e" class="">شناسایی راحت‌تر سرور کامپوننت‌ها و کلاینت‌ کامپوننت‌ها</h2><p id="bbb2e74c-a88e-4af4-8188-3a2df2aa216a" class="">سینا پیرانی یه اکستنشن به اسم MYComponent نوشته برای Next.js ورژن 13 و 14. این افزونه بغل هر فایل براتون یه Badge می‌ذاره و مشخص میکنه اون فایل سرور کامپوننته(SR) یا کلاینت کامپوننت(CL)</p><p id="b6a8d3a9-e2e0-4bec-9dc0-551c831e2d81" class=""><a href="https://bgstaal.github.io/multipleWindow3dScene/">https://bgstaal.github.io/multipleWindow3dScene/</a></p><figure id="11e3a3d0-7ee1-4acc-bf41-58de71e2f552" class="image"><a href="assets/client-server-component.jpeg"><img style="width:203px" src="assets/client-server-component.jpeg"/></a></figure><p id="4e3f3045-7cb5-4d2f-858a-800f759e99e0" class="">
+</p><h2 id="5ba37528-3640-4d73-b0e8-b6f18f029cdc" class="">دستور پخت کامپوننت‌های خوشمزه</h2><p id="76243c95-27f5-469b-a105-0abe1f1c02f2" class="">توی این سایت کامپوننت‌های آماده‌ی مختلفی به همراه دستور پخت کامل و مواد اولیه وجود داره که می‌تونید کلی ازشون ایده بگیرید و با زمان خیلی کم آماده‌ی استفاده توی پروژه‌های واقعی هستن</p><p id="aef36451-13ba-420a-856c-7766001f9095" class=""><a href="https://buildui.com/recipes">https://buildui.com/recipes</a></p><p id="364961dc-7bbe-4eca-aade-83a6c479dcd1" class="">
+</p><h2 id="e913c9d4-fc79-47f6-afa2-8e94da320c40" class="">سی‌اس‌اس اینلاین پیشرفته</h2><p id="3e32e337-5808-4be3-ba46-4ef577e9be14" class="">الان می شه سی‌اس‌اس اینلاین رو به صورت Type Safe با پشتیبانی از psuedo-classes ،media-queries، nested-styles و سلکتورها نوشت البته با رانتایم مینیمال (سی‌اس‌اس توی رانتایم پردازش می‌شه مثل styled-components)</p><p id="845ba165-d749-4d82-9636-8f3a0c2108cf" class=""><a href="https://css-hooks.com/">https://css-hooks.com/</a></p><p id="98255e4a-0705-4ed7-81c4-5dba270580b7" class="">
+</p><p id="bb928e06-79b3-4127-9d26-23740da351d4" class="">ساخت پترن‌های repeatable با فرمت SVG برای استفاده در وب</p><p id="45af01b4-5e7b-475b-8c02-0e029fa184fb" class=""><a href="https://heropatterns.com/">https://heropatterns.com/</a></p><p id="493b2c18-24fa-4ab9-a27f-f3c39b360b7b" class="">
+</p><p id="017e4f08-9574-4c05-9779-4bf13038f819" class="">وب‌ اپ گوگل برای اپتیمایز کردن حجم عکس‌ها که می‌شه آفلاین هم ازش استفاده کرد</p><p id="72e548d0-4cb4-4b05-b706-a2d612f9498a" class=""><a href="https://squoosh.app/">https://squoosh.app/</a></p><p id="b7451cf0-1f15-4c76-8e0a-5930f8edf29b" class="">برای کار با استرینگ‌ها در VSCode یا وب‌استورم طوری که مثلا camelCase رو به snake_case تبدیل کنیم یا خیلی کاربردهای دیگه، این اکستنشن‌ها شدیدا پیشنهاد می‌شه<br/>برای VSCode<br/><br/><a href="https://marketplace.visualstudio.com/items?itemName=marclipovsky.string-manipulation">https://marketplace.visualstudio.com/items?itemName=marclipovsky.string-manipulation</a><br/>برای WebStorm<br/><br/><a href="https://plugins.jetbrains.com/plugin/2162-string-manipulation">https://plugins.jetbrains.com/plugin/2162-string-manipulation</a></p><p id="11792c7a-3b78-4aba-94a4-55b16775e676" class="">
+</p><p id="0b2e811b-18dd-487f-b254-715cae61ac06" class="">چرا نباید outline رو صفر بذاریم</p><p id="abb91a41-74d8-4f7e-a685-047d45565712" class=""><a href="https://www.outlinenone.com/">https://www.outlinenone.com/</a></p><p id="eb12140f-c230-4657-b696-5a600dc517fd" class="">اضافه شدن <code>&lt;img sizes=&quot;auto&quot;&gt;</code> <a href="https://www.linkedin.com/posts/addyosmani_webdevelopers-programming-webperformance-activity-7136452446389751808-aTvH?utm_source=share&amp;utm_medium=member_android">به کروم</a></p><figure id="26a27141-aaac-4cc7-a23d-a57ac93fbfde" class="image"><a href="assets/image-sizes.png"><img style="width:800px" src="assets/image-sizes.png"/></a></figure><h2 id="c2fecf7a-3da7-4f7b-a321-ec5646e77184" class="">یه فریمورک فول‌استک دیگه به نام HWY، اینبار با HTMX و Hono</h2><ul id="36be90a4-0a0e-4b8f-b3bc-358d1e821d77" class="bulleted-list"><li style="list-style-type:disc">رندر سمت سرور با JSX/TSX</li></ul><ul id="2c6a6e77-822b-41cf-8d13-e7f77157267a" class="bulleted-list"><li style="list-style-type:disc">روتینگ با فایل سیستم (مثل Next.js)</li></ul><ul id="146dc1b2-4f7d-475a-a7b6-48d02107dc9b" class="bulleted-list"><li style="list-style-type:disc">اکشن و لودرها به سبک Remix.js</li></ul><ul id="9411604a-d8b4-4418-96ea-5b803aa9e1ae" class="bulleted-list"><li style="list-style-type:disc">استفاده از اکوسیستم غنی <a href="https://hono.dev/">Hono</a></li></ul><ul id="5379de32-1bad-44e4-b1b9-0390a68b7786" class="bulleted-list"><li style="list-style-type:disc">100% تایپ سیف</li></ul><ul id="3463cc73-be6a-4213-89fc-627e54cfebdc" class="bulleted-list"><li style="list-style-type:disc">توسعه سرور با Hono و کلاینت با HTMX</li></ul><ul id="bd589147-89ad-4306-9891-48547fdb6246" class="bulleted-list"><li style="list-style-type:disc">پروسسور CSS داخلی</li></ul><p id="20c335ea-5fba-4e4e-8b86-5d703068dc75" class=""><a href="https://hwy.dev/">https://hwy.dev/</a></p><p id="918bdb2f-f5f6-4489-b1f0-40a228839bd6" class="">
+</p><p id="e8308d49-4ea5-484b-93fa-d2408ba87106" class="">یه فریمورک جمع و جور ری‌اکتی از توسعه دهنده Zustand<br/><br/><a href="https://github.com/dai-shi/waku">https://github.com/dai-shi/waku</a></p><ul id="833ac55b-a706-4689-8289-2a48add6f862" class="bulleted-list"><li style="list-style-type:disc">پشتیبانی از React Server Component</li></ul><ul id="36fcaa2d-224a-46c9-a9c4-07d29b2373ac" class="bulleted-list"><li style="list-style-type:disc">استفاده از Vite.js</li></ul><ul id="c9e18124-3e00-43d5-a9be-598c6ba67768" class="bulleted-list"><li style="list-style-type:disc">قابلیت جایگزینی در پروژه‌هایی که از قبل با Vite بالا اومده!</li></ul><ul id="6facff54-1eb4-4908-a668-30ad08446203" class="bulleted-list"><li style="list-style-type:disc">کم حجم</li></ul><ul id="f10848a1-f966-4bea-a530-c733232f9bb5" class="bulleted-list"><li style="list-style-type:disc">توسعه‌پذیر و سازگار با روترهای مختلف</li></ul><p id="feefdf45-beea-4c46-9f05-cee3a1cf7488" class="">توسعه دهندش <a href="https://github.com/dai-shi">Dai Shi</a> که Zustand و Jotai هم متعلق به اونه، به ورسل پیوسته (مثل ریچ هریس واقعا چه می‌کنه ورسل)</p><h2 id="12bd27b7-6984-49cb-80c0-1b6557fe4f76" class="">جاروبرقی پروژه ها!</h2><p id="43822bd6-3def-4714-bd50-b10513d672f8" class=""><a href="https://knip.dev/">https://knip.dev/</a></p><p id="79f62d40-8815-4422-8b0d-19cf6f15a6ce" class="">احتمالا برای شما هم خیلی از موارد پیش اومده که میخواستین فایل ها و import ها و dependency های اضافی پروژه رو پاک کنین و انقدر این کار حوصله سربره که فقط خدا می‌دونه</p><p id="3bf5b02e-4ebf-493b-89a8-f96af5091774" class="">دیگه لازم نیست بصورت دستی اینکارو بکنید و Knip اینکارو بصورت خودکار براتون انجام می ده.</p><p id="6015edd1-9cc8-4206-8035-0afc1da7b24e" class="">
+</p><h2 id="c4212566-83a4-4819-85f7-17208f60306a" class="">ورژن یک Vitest بالاخره منتشر شد</h2><p id="456ce957-4ea2-441b-a76d-11a4fec84226" class="">یک testing framework خیلی سریع که با Go نوشته شده باهاش می‌شه تست‌ها رو با سرعت خیلی بیشتری اجرا کنیم. برای استفاده ازش نیاز نیست حتما Vite رو توی پروژه داشته باشید، خودش می تونه مستقل استفاده بشه.<br/>به بهونه ریلیز ورژن یک این ابزار بنظرم بد نیست یه نگاهی بهش بندازید<br/></p><p id="a3105b87-849e-499e-8e79-b3dca3827ed1" class=""><a href="https://github.com/vitest-dev/vitest">https://github.com/vitest-dev/vitest</a></p><p id="6ec44954-16cd-4b14-9ee6-fdcbc103aa30" class="">
+</p><p id="fbc57952-247f-4ada-94fb-eee21b5c287f" class="">آنبوردینگ راحت یوزرها روی بخش‌های مختلف سایت چیزی که SaaSها باید داشته باشن اکثر مواقع</p><figure id="4e51a8b8-dead-4a19-9d90-a396a56e47ea"><a href="https://react-joyride.com/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">React Joyride Demo</div></div><div class="bookmark-href"><img src="https://react-joyride.com/favicon.ico" class="icon bookmark-icon"/>https://react-joyride.com/</div></div></a></figure><p id="1bdb8498-0b4a-481f-998d-90dc8a2d549c" class="">
+</p><p id="006364dc-0787-45e3-af39-445d3269e71e" class="">تبدیل هر محتوایی در وب به معادل HTML + Tailwind</p><figure id="1727f548-8bd6-4536-a057-fa14dcf878ba"><a href="https://usewindy.com/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Transform every element on any website to Tailwind CSS</div><div class="bookmark-description">Windy is a browser extension for Google Chrome and Firefox that lets you transform HTML elements to Tailwind CSS with a single click.</div></div><div class="bookmark-href"><img src="https://usewindy.com/img/favicon.png" class="icon bookmark-icon"/>https://usewindy.com/</div></div><img src="https://usewindy.com/img/card-new.png" class="bookmark-image"/></a></figure><p id="b976dfe8-4cf5-42e2-a867-f593d073c16d" class="">
+</p><p id="04df0acc-2936-4c15-9eec-8fd075d35f1d" class="">
+</p><p id="0d74822c-33ed-4d75-8622-5db7bee15675" class="">ابزار Stylex<br/>ابزای هست که بهمون اجازه میده به شیوه ای که meta(facebook) داره استایلینگ برنامش رو هندل میکنه پیاده کنیم و ببینیم به عنوان شرکت سازنده ری اکت چه استاندارد هایی رو رعایت میکنن و سعی کنیم داخل برنامه هامون بیاریم و حتی برای بعضی از برنامه هامون استفادش کنیم<br/></p><p id="40d9151f-8db3-4618-89f0-147eef902129" class=""><a href="https://stylexjs.com/docs/learn/">https://stylexjs.com/docs/learn/</a></p><p id="c7159c9e-a412-45a7-84b8-a7a373b3f4be" class="">
+</p><p id="4b9af19d-dd22-4223-a366-8a2af4dd4dc3" class="">اکستنشن نمایش (خیلی خیلی!) بهتر ارورهای تایپ‌اسکریپت</p><p id="21e1778e-2a29-4dc1-a3d8-777b63ee6831" class=""><a href="https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors">https://marketplace.visualstudio.com/items?itemName=yoavbls.pretty-ts-errors</a></p><p id="e6552224-554c-43ae-a24d-c1c431b3a38d" class="">البته این قابلیت به ورژن‌های جدید WebStorm هم اضافه شده</p><p id="9d6ea701-38f5-4e9c-b37e-9b2f183f44b0" class="">
+</p><p id="05571cae-113d-46e4-a87d-7afe7be3d8ef" class="">کورس‌های مختلف کاردرست رایگان و غیررایگان برای فرانت‌کارها</p><p id="fa0c5d02-1741-4b05-ae8e-0df72c6f5a3d" class=""><a href="https://egghead.io/q?access_state=free">https://egghead.io/</a></p><p id="32703dc0-ea5b-44e0-9a9e-36f787a5474b" class="">
+</p><p id="1a3d2134-6a61-4fce-9131-a4f779827c0e" class="">یه لایبرری کارکشته و پراستفاده برای ماک کردن APIها در مرورگر و نود</p><figure id="186d0bed-f316-4b10-8c33-89b937a9286a"><a href="https://mswjs.io/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Mock Service Worker</div><div class="bookmark-description">API mocking library for browser and Node.js</div></div><div class="bookmark-href"><img src="https://mswjs.io/icon.svg" class="icon bookmark-icon"/>https://mswjs.io/</div></div><img src="https://mswjs.io/og-image.jpg" class="bookmark-image"/></a></figure><p id="3461ab56-a472-4b8e-8256-6bd98ae7b969" class="">
+</p><h2 id="956d4323-6969-4190-aa34-920dc3991f73" class="">هوش مصنوعی Gemini گوگل اومد که نفس‌کش بخواد!</h2><ul id="262b9c57-3cae-414f-b961-4f61d5f1756a" class="bulleted-list"><li style="list-style-type:disc">پردازش عکس، متن و صدا</li></ul><ul id="2cf68c85-4656-4306-8241-e0c580743ee2" class="bulleted-list"><li style="list-style-type:disc">اطلاع از موضوع مورد بحث (Context Awareness)</li></ul><ul id="d0fd04fd-3e7b-4229-a323-12fd5f773ef5" class="bulleted-list"><li style="list-style-type:disc">استدلال بر اساس سطوح پیچیدگی مختلف (Hierarchical Reasoning)</li></ul><ul id="ea2853d6-e6f7-48ea-9e9f-1837c7db4912" class="bulleted-list"><li style="list-style-type:disc">دامنه اطلاعات وسیع و استفاده از فکت‌های معتبر (Less Hallucination)</li></ul><ul id="d1905234-f8c3-4f8b-ad6a-af49dd5e909b" class="bulleted-list"><li style="list-style-type:disc">خلاصه‌سازی، ترجمه، کد زدن و تولید محتوای خلاق</li></ul><p id="c775b156-d8e1-4e72-bdd5-3aa0b74e3fdb" class="">قراره روی دیوایس‌های مختلف هم قابلیت اجرا داشته باشه</p><p id="52996473-b299-46cd-b6a7-397240b041d0" class=""><a href="https://www.youtube.com/watch?v=UIZAiXYceBI">https://www.youtube.com/watch?v=UIZAiXYceBI</a></p><p id="d10be4d7-ca32-48d9-b024-3feed580d963" class="">
+</p><p id="df2924eb-0fcf-446d-b241-1b9f588912ec" class="">هوش مصنوعی ورسل برای ساخت کامپوننت‌های ری‌اکتی با tailwind که داخل شماره‌های قبل معرفی کرده بودیم، به نسخه‌ی یک رسید!</p><p id="846a3b7a-a188-46be-b3fe-ef2f23d0a778" class=""><a href="https://v0.dev/">https://v0.dev/</a></p><p id="e49ac220-3e6c-4dad-8cee-8dfbda41cb04" class="">
+</p><figure id="da53e8fb-ada0-4033-a752-5f11f11a5c14"><a href="https://alirezahamid.medium.com/building-a-counter-app-with-the-mediator-pattern-in-vue-3-a-comprehensive-guide-5db4d8a7df04" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Building a Counter App with the Mediator Pattern in Vue 3: A Comprehensive Guide</div><div class="bookmark-description">Explore the Mediator pattern and Pinia in Vue 3 for building a counter app. Learn the benefits, implementation, and comparison of these…</div></div><div class="bookmark-href"><img src="https://miro.medium.com/v2/resize:fill:152:152/1*sHhtYhaCe2Uc3IU0IgKwIQ.png" class="icon bookmark-icon"/>https://alirezahamid.medium.com/building-a-counter-app-with-the-mediator-pattern-in-vue-3-a-comprehensive-guide-5db4d8a7df04</div></div><img src="https://miro.medium.com/v2/resize:fit:1024/1*qAWmeSDbE7BSzZEI4yBUZw.png" class="bookmark-image"/></a></figure><p id="9b7487a7-4edf-4aae-891f-10f982a97c62" class="">
+</p><p id="3386597b-cdf4-4554-a800-78ea10d7b4aa" class="">ساخت یک وبسایت کامل با هوش مصنوعی</p><figure id="dd9fc7b4-d1f4-4e5b-81d0-6fcdb841175c"><a href="https://soloist.ai/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Solo AI Website Builder</div><div class="bookmark-description">Solo uses AI to instantly compose a beautiful website for your business</div></div><div class="bookmark-href"><img src="https://soloist.ai/favicon/apple-touch-icon.png" class="icon bookmark-icon"/>https://soloist.ai/</div></div></a></figure><p id="86628e2a-e626-4e11-9a14-f44e53168b8c" class="">
+</p><p id="8d1c89d7-642b-43a5-8ba8-a1059dd8ba9f" class="">پترن‌های برنامه‌نویسی مخصوص توسعه‌دهنده‌های فرانت‌اند</p><figure id="13d2e699-cc31-445d-8ea0-da16d082c020"><a href="https://www.patterns.dev/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Patterns.dev</div><div class="bookmark-description">Learn JavaScript design and performance patterns for building more powerful web applications.</div></div><div class="bookmark-href"><img src="https://www.patterns.dev/img/favicon/favicon.ico" class="icon bookmark-icon"/>https://www.patterns.dev/</div></div><img src="https://res.cloudinary.com/ddxwdqwkr/image/upload/f_auto/v1639978357/patterns.dev/posts.jpg" class="bookmark-image"/></a></figure><p id="171e384e-bde2-4385-831f-ea5942437048" class="">
+</p><p id="e3d2c3d5-3860-4c81-b51c-e7632e7e65d1" class="">انتشار نسخه سوم لایبرری بسیار سبک کار با زمان و تاریخ date-fns</p><p id="938fa570-5228-4c81-8e39-f24ce0ff2f2d" class=""><a href="https://github.com/date-fns/date-fns/releases/tag/v3.0.0">https://github.com/date-fns/date-fns/releases/tag/v3.0.0</a></p><p id="dafccfe4-2ec1-47f9-8918-42c684ba30d4" class="">
+</p><p id="c7da74b8-4fa5-4000-bd11-84a20558da4f" class="">کلیپ‌های فوق‌العاده با کیفیت و کوتاه آموزشی فرانت‌اند در زمینه‌های مختلف</p><p id="488b2913-4d6a-45eb-91ea-015f2fbcb501" class=""><a href="https://front.tips/">https://front.tips/</a></p><h3 id="6e645c72-91de-498a-80a6-124db6137a33" class=""><mark class="highlight-purple">تهیه شده توسط:</mark></h3><p id="f547a70f-05ec-40e8-ade7-836e230f9804" class=""><a href="http://Sahebi.org">محمود صاحبی</a>، محمد ایزنلو و <a href="https://www.linkedin.com/in/ordinarysaleh/"><mark class="highlight-gray">صالح شجاعی</mark></a></p><hr id="654bc09f-b390-4a45-bfb7-467bed687a1e"/><div id="0059d85a-bec2-4d8b-8faa-96492ee60c76" class="column-list"><div id="af9ddbd8-5d91-4e7d-aeea-fdfc0574ad79" style="width:25%" class="column"><p id="61b29b8f-837f-4c2a-b7f6-a9c9dafa60e6" class=""><mark class="highlight-teal">آخر آذر ماه ۱۴۰۲</mark></p></div><div id="fb9be3d5-a9af-42a1-8821-1393d164f80c" style="width:25%" class="column"><p id="849ba44d-fdde-46a4-aa99-3de548c0934e" class=""><mark class="highlight-orange"><a href="https://frontchapter.ir/">سایت فرانت‌چپتر</a></mark></p></div><div id="53392e05-c02c-441e-a2e0-e72822f4ff66" style="width:25%" class="column"><p id="404e7ff6-ff7d-421f-914c-91cc876ceb25" class=""><mark class="highlight-orange"><a href="https://t.me/FrontChapter">کانال</a></mark><mark class="highlight-orange"> و </mark><mark class="highlight-orange"><a href="https://t.me/frontChapterGroup">گروه فرانت‌چپتر</a></mark></p></div><div id="cfc7274a-1035-4c9a-9e74-39b4c32fd816" style="width:25%" class="column"><p id="9e282d9d-1967-4d09-872a-94fc5ea9a05b" class=""><strong><a href="https://www.womenlifefreedom.com/"><mark class="highlight-red">زن زندگی آزادی</mark></a></strong></p></div></div></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
