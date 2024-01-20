@@ -1,0 +1,683 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>هویج تایمز | دی ماه ۱۴۰۲</title><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="../styles.css"><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="2330d122-8f85-4404-9c29-b9f8cbe914f0" class="page sans"><header><img class="page-cover-image" src="./assets/banner.png" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🥕</span></div><h1 class="page-title">هویج تایمز | دی‌ماه ۱۴۰۲</h1><p class="page-description"></p></header><div class="page-body"><h2 id="68cae9ac-c55b-4233-af3e-39d5588d98bc" class=""><a href="https://zaya.io/6ruhg"><strong>🥕 </strong></a><a href="https://zaya.io/6ruhg">بزرگ‌ترین همایش فرانت‌اند ایران در فرانت‌چپتر!</a></h2><p id="76bf452f-e262-4ae2-86ed-0cb250ebfa98" class="">کامینیوتی فرانت چپتر بیش از ۳ سال است که با هدف ایجاد محیطی صمیمی برای گفت‌وگوی تخصصی شکل گرفته و به شکل مستمر فعالیت دارد. اگر بخواهیم به بخشی از فعالیت‌های جامعه فرانت چپتر اشاره کنیم؛ در حال حاضر کامینیوتی فرانت چپتر جلسات و دورهمی‌های هفتگی را با فرهنگ خاص خود برگزار می‌کند. همچنین، هر ماه اخبار دنیای فرانت‌اند را در ماهنامه‌ی هویج تایمز منعکس می‌نماید. و علاوه بر این هر سال، بزرگ‌ترین دورهمی توسعه دهندگان فرانت‌اند را در قالب سفر همایش برنامه‌نویسی برگزار می‌کند.</p><p id="f3237074-ed30-43ca-8ac8-d19547a38ee3" class="">همایش امسال برای علاقه‌مندان با هر سطحی از تجربه توصیه می‌شود، ما برای همه‌ی شرکت‌کنندگان چیزهای تازه‌ای برای کشف کردن داریم! در همایش امسال، تمرکز اصلی بر روی مهارت‌ها و تجربه‌هایی است که در جایی داکیومنت نشده‌اند و تجربه‌ی واقعی برنامه نویس های فرانت اند باتجربه در برخی از شرکت‌های بزرگ نرم‌افزار است. مواردی که در کنار مهارت‌های کد نویسی نیاز است از آن‌ها استفاده کنید تا بتوانید یک توسعه‌دهنده‌ی ارشد و فردی تاثیرگذار باشید.</p><p id="189cd5e3-2fe6-4278-88ad-121d435b480b" class=""><strong>در این سفر در کنار هم، خاطرات و داستان‌های زیبایی را خواهیم ساخت. مشتاق دیدارتان هستیم</strong></p><h3 id="6da63862-2c36-4bac-97d0-ee3bd59d70b9" class=""><a href="https://zaya.io/e7onn"><strong>🚀 Tailwind CSS 3.4 : هیجان‌انگیزتر از همیشه با ورژن جدید!</strong></a></h3><p id="add3589e-d481-458f-a902-ac804715d8d9" class="">تغییرات جدید Tailwind CSS رو از دست ندید! این فریم‌ورک محبوب تازگی‌ها نسخه جدیدش رو رونمایی کرده و با امکانات و ویژگی‌های جدیدی که به خودش اضافه کرده روند توسعه رو بهتر از قبل کرده. نگاهی بندازید به چند تا از این ویژگی‌های جذاب:</p><ul id="fa91d14c-01c3-4a2e-bc74-e820924eefc7" class="bulleted-list"><li style="list-style-type:disc">واحدهای جدید dvh و lvh برای انعطاف‌پذیری بیشتر در طراحی.</li></ul><ul id="b0444552-472a-4062-926c-91e36cfc333e" class="bulleted-list"><li style="list-style-type:disc">قابلیت &#x27;has:&#x27; که باهاش می‌تونید شرط های مختلفی رو چک کنید و کد تمیزتری داشته باشین.</li></ul><h3 id="9e718d97-17df-4b4a-92ad-996d48f170c2" class=""><a href="https://zaya.io/6nabl">نسخه </a><a href="https://zaya.io/6nabl"><strong>14.1 NextJS رسید!</strong></a></h3><p id="7489a1df-88ee-4ec2-b15a-61196c03cafe" class="">در این شماره باگ‌های مختلفی رفع شده، کاستوم کش بهتر شده، خطاهای بهتری به برنامه نویس‌ها نشون داده میشه و در نهایت Turbopack باید سریع تر از قبل کار کنه</p><h2 id="074701e6-6207-4b06-99ab-980b57f3b5fa" class=""><a href="https://zaya.io/h73yd">پیش به سوی آینده با کتاب قصه‌</a></h2><p id="65044cc9-c781-4dd9-a6c3-794b08dafe8b" class="">چهار سال از اولین انتشار استوری بوک میگذره و برای سال ۲۰۲۴ انتظار برای نسخه‌ی ۷ این کتابخانه به پایان رسید</p><p id="1af97a50-fae8-4eb6-ac27-fd67ee4f61c3" class="">پشتیبانی از Vite و pnpm، پشتیبانی بدون نیاز به پیکربندی برای NextJS و SvelteKit، پشتیبانی از MDX2 و بهبود ریفرش شدن از ویژگی‌های اصلی این نسخه است</p><h3 id="a1556075-fa49-453b-b94b-02cef8a1f2be" class=""><a href="https://zaya.io/577tf"><strong>تحولی شگفت‌انگیز: پشتیبانی از سینتکس جاوااسکریپت در MySQL!</strong></a></h3><p id="4ef3699e-3354-4b2d-b940-1e5c18578aa8" class="">باورتون می‌شه؟ حالا MySQL، یکی از محبوب‌ترین دیتابیس‌های جهان، از سینتکس جاوااسکریپت پشتیبانی می‌کنه! این تحول جدید که در وبلاگ رسمی Oracle اعلام شده، به توسعه‌دهندگان این امکان رو می‌ده که قدرت جاوااسکریپت رو مستقیماً در MySQL به کار ببرن. تصور کنید، توانایی‌های جاوااسکریپت و دیتابیس MySQL در کنار هم! این خبر برای دنیای توسعه نرم‌افزار یه تحول بزرگه. اگه دوست دارید بیشتر بدونید، حتماً سری به وبلاگ Oracle بزنید و از جزئیات این ویژگی جدید لذت ببرید! </p><h3 id="e725b620-b0a8-44b6-8e62-cc2ee35f38f6" class=""><a href="https://zaya.io/uhe6j"><strong>🌟 کشف زیبایی‌های طراحی وب</strong></a></h3><p id="9598ddef-9bb8-4ca6-b053-6dac52ec7306" class="">این وبسایت یه گنجینه واقعیه! انگار همه‌ی طراحی‌های وب جذاب و مدرن رو از تمام گوشه‌های اینترنت جمع کرده واسه ما. اگه شما هم مثل من به این جور چیزها علاقه‌مندید، پرسه زدن تو این سایت می‌تونه یه تجربه خفن و لذت‌بخش باشه. سعی کنید خودتون رو با فکر کردن به اینکه چطوری این دیزاین‌ها رو تونستن به کد کنن اذیت نکنید و از این همه زیبایی لذت ببرید و ایده بگیرید. پس بزنید به دلش! </p><h3 id="9ba535c4-2437-4cc1-abd1-865395234b10" class=""><a href="https://zaya.io/woy4z"><strong>💡 کاهش 35% حجم کدهای CSS - سبک‌تر کنید !</strong></a></h3><p id="4bd3c7a6-9ed7-4939-996b-50311d14076c" class="">آیا می‌دانستید که به‌طور متوسط، حدود 35 درصد از کدهای CSS در پروژه‌ها بلااستفاده مانده و فقط باعث سنگینی اپلیکیشن می‌شوند؟ بله، این یک واقعیت تعجب‌آور است!</p><p id="32a6a34e-fb71-40c8-ac48-443c6b9e514b" class="">با استفاده از این ابزار آنلاین، شما می‌توانید کدهای CSS غیرضروری خود را شناسایی کنید. این فرصتی است برای پالایش و حذف این کدهای اضافه، و در نتیجه، کاهش حجم و بهبود عملکرد اپلیکیشن خود. سرعت بارگذاری و عملکرد بهتر اپلیکیشن‌تان را با این ابزار تجربه کنید! </p><h3 id="781feed3-7d3f-4089-be71-db99437b852e" class=""><a href="https://zaya.io/68dw9">آمارش رو بده بهم رو npm</a></h3><p id="59816df6-987f-4928-af8c-80de75b127da" class="">این یک ابزاره که آمار دانلود بسته‌های npm را بهتون میده. با این ابزار میتونید ببینید چه نسخه‌هایی از یک پکیج چقدر دارن دانلود میشن و محبوب هستن.</p><h3 id="45e06675-0ff6-4f7f-8ba1-b574e7708de3" class=""><a href="https://zaya.io/fcqkp"><strong>🚀 راهی جذاب و واقع‌گرایانه برای تبدیل شدن به توسعه‌دهنده فرانت‌اند حرفه‌ای!</strong></a></h3><p id="03acf549-262c-47d7-8ac4-c897cb631843" class="">این پلتفرم با تمرکز بر کیفیت بالای آموزشی، شما را از طریق چالش‌های جذاب و متنوعی هدایت می‌کند که هر کدام به گونه‌ای طراحی شده‌اند تا شما را با موقعیت‌ها و مشکلات واقعی دنیای برنامه‌نویسی فرانت‌اند آشنا سازند. این چالش‌ها به شما این امکان را می‌دهند که مهارت‌های خود را در محیطی شبیه‌سازی شده، اما بسیار نزدیک به دنیای واقعی، به کار بگیرید و تقویت کنید.</p><h3 id="78fb8dd2-8432-40be-a306-b7ee79612ce2" class=""><a href="https://zaya.io/sgxs1">Factory Pattern در React چیه و چطوری بسازیمش؟</a></h3><p id="7e988768-fdc1-4c15-addb-d50994b9a835" class="">&quot;Factory Pattern&quot; در React یه الگوی طراحیه که بهتون اجازه میده اشیا مختلف رو بدون نیاز به تعریف کلاس‌های جداگانه بسازید. به این صورت، کدتون تمیزتر و مدیریت‌پذیرتر میشه. این توییت ویدیویی داره که نشون میده چطوری میشه این کارو توی React انجام داد. حتما چکش کنید! </p><p id="812b7826-90d6-468e-8616-638a49b5c857" class="">
+</p><figure id="6a6ea276-7be3-4b55-8b37-9fcc82c839f6"><div class="source" style="height: auto !important;"><a href="./assets/react-ui-factory-pattern.mp4">react-ui-factory-pattern.mp4</a><video controls src="./assets/react-ui-factory-pattern.mp4" style="max-width: 100%;" /></div></figure><p id="240a719a-baf4-40f5-b4e9-a57587fa00b8" class="">
+</p><h3 id="bb78b8e2-39ea-445d-b5ff-a0ea20608510" class=""><a href="https://zaya.io/ztdas"><strong>Typewind: Tailwind با چاشنی TypeScript! 🚀</strong></a></h3><p id="41e5f521-63fb-4b41-800f-205906013a1e" class="">Typewind اینجاست تا دنیای CSS رو با قدرت TypeScript ترکونده! اگه دوست دارید Tailwind رو با امنیت و دقت TypeScript تجربه کنید، Typewind همون چیزیه که می‌خواستید. سرعت Tailwind + دقت TypeScript = کدنویسی که همه دوست دارن! پس بیایید و Typewind رو امتحان کنید؛ کدنویسی تون رو به یه تجربه سریع و دقیق تبدیل کنید! </p><h3 id="f6af85a3-d91d-4842-b2d3-d12f8b8ecf33" class=""><a href="https://zaya.io/w2wgv">LocalTunnel: راهی جادویی برای تست وبسایت‌های لوکال!</a></h3><p id="5ca2c3ff-343d-47b6-b6ca-684e4a54536e" class="">فرض کنید داخل یک روز زیبای بهاری که از خونه دارید دورکاری می‌کنید و در حال انجام تسکتون هستید که یک تسک فورس میاد سمتتون و باید با تیم مارکتینگ یه قابلیت رو پیاده سازی و تست و نهایی کنید با هم و به سرعت برسه به دست کاربر نهایی. توی چنین شرایطی احتمالا مدام کامیت کردن و پوش کردن و منتظر تموم شدن پیاپ‌لاین شدن بهتون کمک زیادی نمیکنه. توی این شرایط و شرایط مشابه بسیاری که ممکنه پیش بیاد، شما نیاز دارید دسترسی لوکال‌هاستتون رو به کسی روی اینترنت بدید که LocalTunnel دقیقاً اون چیزیه که برای تست‌های سریع و بدون دردسر بهش نیاز دارید.</p><h3 id="036ed73f-3ebe-4039-b29b-9a999d93a254" class=""><a href="https://zaya.io/sxlrq">Script Kit: کلید میانبر برای هر کاری! 🚀</a></h3><p id="aca1879d-d2b1-4ab0-b0e7-318b0ebd4bfb" class="">تصور کنید دارید با چند کلیک ساده، وظایف روزمره‌تون رو مثل جادو انجام می‌دید. Script Kit اومده تا این خیال رو واقعیت بکنه! این ابزار، مثل یه جعبه ابزار جادویی برای برنامه‌نویسانه. می‌خواید سریع یه پروژه رو باز کنید، یا شاید یه تصویر بامزه از توییتر دانلود کنید؟ Script Kit به شما این قدرت رو می‌ده. فقط چندتا اسکریپت بنویسید و ببینید چطور کارها مثل برق و باد انجام می‌شن. حالا دیگه وقتشه که خودتون رو برای یه تجربه کدنویسی باحال و سریع آماده کنید! </p><p id="579ce307-39d4-4ed4-8a48-48de25744d9b" class="">
+</p><h3 id="c5db5792-71da-46cb-b050-1bbfedd31a26" class=""><a href="https://zaya.io/tywgo"><strong>آشنایی عمیق‌تر با Server Components در React</strong></a></h3><p id="fec5055f-e3cb-4269-9477-2dac872b064d" class="">دوست دارید با عمق و جزئیات بیشتری با Server Components در React آشنا بشید؟ این مقاله با زبانی ساده و جذاب، شما را با مفهوم، کاربرد و قدرت Server Components در React آشنا می‌کنه. خوندن این مطلب می‌تونه درک شما رو از چگونگی بهره‌برداری از این ویژگی جدید در React و افزایش کارایی برنامه‌هاتون به سطح دیگه‌ای ببره. پس اگر می‌خواهید در دنیای توسعه فرانت‌اند یک قدم جلوتر باشید، این مقاله رو از دست ندید! </p><p id="99e4f6e0-3210-4cf8-a7e5-07f1ea95c15a" class="">
+</p><h3 id="85b0edff-8958-494d-9b19-1f5dad6dfadd" class=""><a href="https://zaya.io/i9f83"><strong>Total TypeScript: آموزش سریع حل خطاهای TypeScript</strong></a></h3><p id="dd494a9d-722a-4a4d-9656-20097ad756d9" class="">گیر افتادن در خطاهای TypeScript دیگه مسئله‌ای نیست! با &quot;Total TypeScript&quot;، خطاهای گیج‌کننده رو به راحتی حل کنید. این آموزش، راهنمایی سریع و موثر برای فهم و رفع اشکالات متداول TypeScript است. برای یادگیری روش‌های حل خطاهایی مثل &quot;Type Not Assignable&quot; یا &quot;Property Does Not Exist on Type&quot;، اینجا بهترین مکانه. با تمرینات کاربردی، شما راه حل‌های مختلف رو تجربه می‌کنید. پس دیگه وقتشه که این خطاها رو پشت سر بذارید و به سطح بعدی TypeScript برسید! </p><h3 id="561c2b6c-f05b-4663-8cca-5913a28a981f" class=""><a href="https://zaya.io/berx8"><strong>Maybe: کدی که حساب بانکی‌تون رو متحول می‌کنه! 🚀</strong></a></h3><p id="cb1fac8b-c37c-46d8-80a7-23dd13089aef" class="">Maybe نه تنها یه اپلیکیشن مدیریت مالی خفنه، بلکه یه منبع عالی برای یادگیری کدنویسیه! با خوندن سورس کد این اپ، می‌تونید ترفندهای جدیدی در برنامه‌نویسی کشف کنید و از روش‌های کدنویسی حرفه‌ای‌ها درس بگیرید. پس، اگه می‌خواهید هم دنیای مالی‌تون رو مدیریت کنید و هم مهارت‌های کدنویسی‌تون رو ارتقا بدید، Maybe دقیقاً اون چیزیه که نیاز دارید! </p><p id="46e84b9d-8cff-4b31-8e54-35448f7a3c3f" class="">
+</p><h3 id="be4f6e7c-d3ed-4e1a-9294-3c54e35b51bd" class=""><a href="https://zaya.io/hm76k"><strong>Plate: ریچ تکست ادیتوری که کدنویسی رو لذت‌بخش می‌کنه!</strong></a></h3><p id="6bb48268-673d-476a-a9eb-aa4ca78c1ef9" class="">Plate یه ریچ تکست ادیتور جدید و فوق‌العاده‌ایه که باهاش کدنویسی انگار بازی کودکانه میشه! اگه دنبال یه تجربه شیرین و ساده در ادیت کردن متن‌هاتون هستید، Plate همون چیزیه که می‌خواستید. پس، وقتشه که کدنویسی سنتی رو کنار بذارید و با Plate به دنیایی از امکانات جدید قدم بذارید! </p><p id="40c35711-d872-4080-b20e-f6134dd85a70" class="">
+</p><h3 id="437987a6-f0e7-4a70-b2b7-f08d5c39e3a3" class=""><mark class="highlight-purple">تهیه شده توسط:</mark></h3><p id="7fbb8872-892d-42aa-a2fe-4787af45a5b0" class=""><a href="https://zaya.io/71yvh"><mark class="highlight-gray">محمود صاحبی</mark></a><mark class="highlight-gray">، </mark><a href="https://zaya.io/k4lwx"><mark class="highlight-gray">محمد ایزنلو</mark></a><mark class="highlight-gray"> و </mark><a href="https://zaya.io/0hehx"><mark class="highlight-gray">صالح شجاعی</mark></a></p><hr id="1bc26028-d20e-4b48-a858-a577863d71ef"/><div id="a003d0ff-8629-40e1-8509-a6855918bf23" class="column-list"><div id="b32f5e0e-f9ab-4e05-8f35-df52b54991b9" style="width:25%" class="column"><p id="0eeb5645-606d-43a4-ba1f-df8248e22698" class=""><mark class="highlight-teal">آخر دی ماه ۱۴۰۲</mark></p></div><div id="56afdb7f-8585-4a08-8dea-8d7601135dc7" style="width:25%" class="column"><p id="d48b426c-3290-49f3-9c3c-ce3992aab27b" class=""><a href="https://zaya.io/r01fi"><mark class="highlight-orange">سایت فرانت‌چپتر</mark></a></p></div><div id="0532f1cb-a45c-41f1-bc4d-29363597ae58" style="width:25%" class="column"><p id="4896b643-8320-4505-baf7-ee60b56ea787" class=""><a href="https://zaya.io/3yx4u"><mark class="highlight-orange">کانال</mark></a><mark class="highlight-orange"> و </mark><a href="https://zaya.io/3x8py"><mark class="highlight-orange">گروه فرانت‌چپتر</mark></a></p></div><div id="01ab5dfc-cc54-44b1-81aa-8aa3a346e985" style="width:25%" class="column"><p id="69e5e87a-6c70-4f8f-804d-d4a8a22cbe9c" class=""><a href="https://zaya.io/2p8s1"><strong>ثبت‌نام در بزرگ ترین همایش فرانت اند</strong></a></p></div></div><p id="9c947e22-da00-4786-b30d-3f5575a94f5d" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
