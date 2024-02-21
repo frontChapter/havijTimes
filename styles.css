@@ -10,6 +10,7 @@ body {
   white-space: normal;
   line-break: strict;
   padding: 1em !important;
+  color: #dedede !important;
 }
 
 a, a.visited {
