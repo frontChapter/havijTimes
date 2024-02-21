@@ -16,6 +16,10 @@ a, a.visited {
   text-decoration: none !important;
 }
 
+a:hover, a:active {
+  text-decoration: underline !important;
+}
+
 a::after, a.visited::after {
   content: ' 🔗';
 }
