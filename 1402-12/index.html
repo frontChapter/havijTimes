@@ -1,0 +1,692 @@
+<html lang="fa"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>هویج تایمز | بهمن‌ماه ۱۴۰۲</title><link rel="stylesheet" href="../styles.css"><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: none;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="57c44e64-e58a-4878-b28f-6432e0f33835" class="page sans"><header><img class="page-cover-image" src="./assets/newruz.jpg" style="object-position:center 40%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">🥕</span></div><h1 class="page-title">هویج تایمز | اسفند ماه ۱۴۰۲</h1><p class="page-description"></p></header><div class="page-body"><h2 id="20461032-db77-4ea0-aa75-307c15f721fb" class="">گزارش ایونت فرانت‌چپتر 2024</h2><figure id="f4d345df-b9cf-44ac-b89c-968372f17385"><div class="source" style="height: auto !important;"><a class="hide-link" href="./assets/conf-video.mp4">conf-video.mp4</a><video autoplay loop muted src="./assets/conf-video.mp4" style="max-width: 100%;" /></div></figure><p id="2fd98979-9079-41b1-b648-8b4991668b71" class="">
+</p><p id="60a6175f-5907-4193-b721-29ad90808f16" class=""><a href="https://frontchapter.ir/">همایش امسال فرانت‌چپتر</a>، ۹ و ۱۰ اسفند ماه برگزار شد و توسعه‌دهندگان از نقاط مختلف ایران خودشون رو به مازندران رسوندن تا توی این مسیر پر پیچ و خم کاری، هم سفر هم دیگه باشیم. روز همایش با سخنرانی <strong>امیر کبیری</strong> درمورد چالش‌ها و راه حل‌های تیم فرانت‌اند دیجیکالا آغاز شد. پس از اون <strong>پوریا باباعلی</strong> همه رو با ارائه‌ی سرگرم کننده‌اش به وجد آورد! ترکیب موضوعات بسیار فنی با کمدی خاص پوریا باعث شد همه تا لحظه‌ی آخر چشم به ارائه‌اش بدوزن. <strong>محمدرضا ایرانمنش</strong> از تیم دیوار کل طول ایران رو از هرمزگان تا مازندارن سفر کرده بود تا برای بچه‌های فرانت‌چپتر درمورد فرایند توسعه و نگهداری بگه و خوش تیپ بودنش از نقاط بسیار مهم ارائه‌اش بود. حل مسئله مثل یه مهندس نرم‌افزار موضوع ارائه‌ی <strong>حسین موسوی</strong> از علی بابا بود که علاوه بر آوردن دید مهندسی به زندگی بچه‌ها موفق شد «دس خوش!» رو به تیکه کلام خیلی از بچه‌ها تبدیل کنه. پس از صرف نهار خوشمزه، همه با دلی شاد به سالن بازگشتیم و برای ارائه‌ی بعد آماده شدیم. <strong>حسام موسوی</strong> موفق شد با روایت شیوا و جذابی که داشت اسمش رو در کنار مارک زاکربرگ و Adam Wathan خالق tailwind به عنوان بیزینس‌من/دولوپر قرار بده و ما رو این بار به بیزینس‌من بودن هدایت کنه. <strong>بهنیا آزاد</strong> پس از اینکه دید همه‌ی ارائه‌ها بسیار جذاب بودن و رقابت با سایر ارائه‌دهنده‌ها خیلی چالش برانگیز شده، به فکر چیت زدن و دوپینگ افتاد و پس از ارائه‌ی بی‌نظیرش درمورد تایپ‌اسکریپت، به شرکت‌کننده‌ها قول داد دوره‌ی رایگان تایپ‌اسکریپت مثل یک حرفه‌ای رو از فرانت‌چپتر منتشر کنه! <strong>سمانه یعقوبی</strong> ارائه دهنده‌ی بعدی بود که پس از ارائه‌ی خوبش با دو مدال قهرمانی در رقابت تنگاتنگ جذاب ترین زوج حاضر در سالن و همینطور تنها خانم راه یافته به استیج فرانت‌چپتر تونست به خانه برگرده. ارائه دهنده‌ی آخر هم، خورشید تابناک هویج تایمز جناب <strong>محمود صاحبی</strong> بود که برای ارائه‌شون چندین متخصص جلوه‌های ویژه از استودیو Fortiche (سازنده‌های سریال Arcane) استخدام کرده بودند تا یک شاهکار هنری رو شاهد باشیم. در طول ارائه‌ی ایشون یک بمب صوتی در سالن منفجر شد که باعث شد خوابمون بپره و شایعاتی مبنی بر این هست که این صدای محیب هماهنگ شده و جزئی از ارائه‌ی محمود بوده!</p><p id="b84575d3-24dd-402b-977d-1ba163c33fd0" class="">پنل گفت‌وگوی آخر که قرار بود با حضور <strong>آرمان علی‌قنبری، سمانه یعقوبی</strong> و <strong>اشکان رحمانی</strong> عزیز برگزار بشه به خاطر مشکلات فنی از برنامه حذف شد ولی از بچه‌ها قول گرفتیم اون پنل رو آنلاین برگزار کنن تا هیچ محتوایی از دستمون در نرفته باشه.</p><p id="87d7f51d-e002-4e52-aa5a-f6f9df936d6b" class="">برای مراسم اختتامیه برندگان مسابقه‌ی <a href="https://festival.frontchapter.ir/i-am-a-hero"><strong>من قهرمانم!</strong></a> معرفی شدن و پس از اون از سخنران‌ها و تیم اجرایی که اینقدر با عشق هستند تجلیل شد. در آخر یک عکس دست جمعی، ثبت خاطره‌ی ما شد از بودن کنار هم به عنوان یک جامعه پر از حمایت و تخصص و عشق.</p><h2 id="bcf968dd-5472-498b-8714-4a02d73d382f" class=""><a href="https://www.freecodecamp.org/news/new-react-19-features/">از React 19 چه خبر؟</a></h2><figure id="0f6aac7b-0830-4f5f-87ae-8f02395c0ba9" class="image"><a class="hide-link" href="./assets/react-19.png"><img src="./assets/react-19.png"/></a></figure><p id="acc42ba3-9c2f-4796-a3b7-743762d8d1ae" class="">ری‌اکت 19 که هنوز در مرحله بتاست تغییرات خوبی داشته و کامیونیتی هم ازش کلی استقبال کرده. پله بعدی بلوغ ری‌اکت دو اتفاق مهمه، یک پایدار و فراگیر شدن React Server Component و دو React Compiler که جدا از کور اصلی ری‌اکت در حال توسعست.</p><ul id="41d51aa5-6d80-426d-917e-4eaeba65727c" class="bulleted-list"><li style="list-style-type:disc">نسخه پایدار Server Component بعد سال‌ها</li></ul><ul id="49e817cd-0a54-4582-aa23-c4990c0ec084" class="bulleted-list"><li style="list-style-type:disc">یک API جدید که نسخه بهتر Server-Actions با پشتیبانی از کلاینت‌ساید و سرورساید برای کار با فرم‌هاست به اسم Actions</li></ul><ul id="3454969e-ce33-4ca5-8adf-65d7a9fa98ab" class="bulleted-list"><li style="list-style-type:disc">اسِت لودینگ در پس‌زمینه</li></ul><ul id="20587c06-752d-4b52-91da-6e6be5f20cda" class="bulleted-list"><li style="list-style-type:disc">کامپوننت داخلی جدید &lt;DocumentHead&gt; که جایگزین React Helmet می‌شه</li></ul><ul id="d9bdee65-2319-49fa-b575-fe3221173f96" class="bulleted-list"><li style="list-style-type:disc">پشتیبانی و هماهنگی بهتر از Web Component ها</li></ul><ul id="54ac618e-45d7-4db5-b122-f910360f157d" class="bulleted-list"><li style="list-style-type:disc">هوک‌های جدید use، useOptimistic، useFormStatus، useFormState</li></ul><ul id="3c46fee5-bf90-4bfb-8875-9375f10b6f19" class="bulleted-list"><li style="list-style-type:disc">کانتکست API ساده شده</li></ul><h2 id="cf4e2736-f125-4737-bb2c-b7d0242f6a1e" class=""><a href="https://wasmer.io/posts/winterjs-v1">با اعلام ارشیا غفوری، Winter is Coming !</a></h2><figure id="4d62c940-2aa7-48ff-99fa-d035e326c19b" class="image"><a class="hide-link" href="./assets/winterjs.png"><img src="./assets/winterjs.png"/></a></figure><p id="d0e9cfdb-bb30-4dac-9f34-dc82d3f41f98" class="">یک رانتایم جدید جاوااسکریپت اومده که بهار امسالو زمستون کنه، سربالا و سینه‌کفتری. WinterJS اسم رانتایم جدیدیه که مدعیه از Bun هم سریع‌تره و از همین حالا React Server Component رو تو Next.js به صورت کامل ساپورت می‌کنه (تا جایی که مطلعیم فعلا فقط نود توانایی اجرای RSC رو داره)</p><ul id="9235751c-bbc0-4ebc-964a-2a0455743ed4" class="bulleted-list"><li style="list-style-type:disc">توسعه داده شده با Rust و انجین جاوااسکریپتی فایرفاکس به نام SpiderMonkey</li></ul><ul id="1f04f783-17fe-452a-b05d-76db655b914e" class="bulleted-list"><li style="list-style-type:disc">سازگاری تقریبا کامل با <a href="https://wintercg.org/">WinterCG</a> که یک استاندارد جامع برای رانتایم‌های جاوااسکریپتیه</li></ul><ul id="4d17babd-3443-4f41-bc05-c81679eb1e93" class="bulleted-list"><li style="list-style-type:disc">قابلیت اجرا روی Edge با استفاده از Web Assembly</li></ul><ul id="cf7fc46e-211c-4449-8c86-2e249624d620" class="bulleted-list"><li style="list-style-type:disc">سرعت بسیار بالا، این ادعا مطرحه که از Bun هم سریع‌تره</li></ul><ul id="ff29e1ba-af65-4342-96c4-ca9f1397e5ba" class="bulleted-list"><li style="list-style-type:disc">سازگاری با Cloudflare API</li></ul><ul id="eee9c9e1-7600-4720-b9a7-bcd25718d6af" class="bulleted-list"><li style="list-style-type:disc">پشتیبانی از فریم‌ورک‌های مطرح مثل Next.js، Hono، Astro، SvelteKit، Nuxt.js و…</li></ul><ul id="2801ce70-d5b2-4ea9-be60-b9362511ca63" class="bulleted-list"><li style="list-style-type:disc">اجرای بدون مشکل React Server Component</li></ul><p id="b6e10b11-ecce-4588-bc03-afb485cb506a" class=""><a href="https://github.com/Arshia001">ارشیا غفوری</a> لید دولوپر این پروژست که از طرف فرانت‌چپتر یه دس مریزاد اساسی بهش می‌گیم 🥕🧡</p><h2 id="c3d8e278-77cf-4510-8521-386eeffe8a34" class=""><a href="https://million.dev/blog/lint">انتشار نسخه بتای عمومی Million Lint</a></h2><figure id="32638ce1-1a5e-466d-9aeb-2e7805f60e15"><div class="source" style="height: auto !important;"><a class="hide-link" href="./assets/million.mp4">million.mp4</a><video autoplay loop muted src="./assets/million.mp4" style="max-width: 100%;" /></div></figure><p id="aff865d8-cdeb-4376-88f0-d2cca5d88f91" class="">کامپایلر Million.js برای React مدعیه که می‌تونه تا 70% پرفورمنس بهتری برای اپ‌های ری‌اکتی داشته باشه، حالا همین تیم یک اکستنشن VSCode معرفی کرده به نام Million Lint که پیشنهاداتی برای بهبود پرفورمنس می‌ده</p><ul id="c3620ab2-f325-4da3-8f7a-1fdb34ce9e54" class="bulleted-list"><li style="list-style-type:disc">استفاده از استاتیک و رانتایم آنالیز برای نتیجه بهتر</li></ul><ul id="084c5d59-d43c-45d5-9219-2dfa9b1f0790" class="bulleted-list"><li style="list-style-type:disc">اندازه‌گیری پرفورمنس اپ در رانتایم</li></ul><ul id="78c4dbd5-24aa-41b0-b913-4d392830df03" class="bulleted-list"><li style="list-style-type:disc">ارائه پیشنهاد برای بهبود پرفورمنس</li></ul><ul id="6c1a12c1-a7fe-48aa-b9f3-b920d1b163cf" class="bulleted-list"><li style="list-style-type:disc">هوش مصنوعی پولی Lint++ برای توصیه‌های بهتر پرفورمنسی در کنار اکستنشن رایگان VSCode</li></ul><h2 id="6a14884b-404a-4c89-9a78-8174d15a19ae" class=""><a href="https://screenshottocode.com/">تبدیل اسکرین‌شات و ویدئو به کد با Screenshot to Code</a></h2><figure id="cddce07c-3f88-4da1-b8db-5b6b39fa5d87"><div class="source" style="height: auto !important;"><a class="hide-link" href="./assets/screenshottocode.mp4">screenshottocode.mp4</a><video autoplay loop muted src="./assets/screenshottocode.mp4" style="max-width: 100%;" /></div></figure><p id="f7264835-49ac-4b63-a694-924ef1fc0fe2" class="">
+</p><p id="8d7dca4b-c1bc-4869-801b-1f1a451b2188" class="">یه لایبرری خوب و ترتمیز برای تبدیل اسکرین‌شات و اسکرین‌ریکوردینگ به کد فرانت‌اند به وسیله AI با حدود 48k استار در گیت‌هاب!</p><ul id="013bb7c6-ebac-4d57-90f8-65d1aed9f72e" class="bulleted-list"><li style="list-style-type:disc">تبدیل اسکرین‌شات، موکاپ و دیزاین فیگما به کد واقعی</li></ul><ul id="7d85214e-a12e-4512-9c26-b116cba765a6" class="bulleted-list"><li style="list-style-type:disc">پشتیبانی از React، ٰVue، HTML، SVG و Tailwind</li></ul><ul id="a6101218-a6ec-4f14-a997-1f8fec120622" class="bulleted-list"><li style="list-style-type:disc">پشتیبانی از ویدئو و اسکرین ریکوردینگ به عنوان دیتای نمونه برای تبدیل (علاوه بر اسکرین‌شات)!</li></ul><h2 id="3cf4caf6-a82c-4587-bc21-eeb8d47e1355" class=""><a href="https://storybook.js.org/blog/storybook-8/">انتشار Storybook 8</a></h2><figure id="e3ee3213-2075-43af-beec-332a1f6844cd" class="image"><a class="hide-link" href="./assets/storybook.png"><img src="./assets/storybook.png"/></a></figure><ul id="171abfe7-e1e7-45e3-a427-7dc96c3486ff" class="bulleted-list"><li style="list-style-type:disc">ویژوال تستینگ داخلی</li></ul><ul id="0b52f671-4918-470a-a590-76eca226991b" class="bulleted-list"><li style="list-style-type:disc">پشتیبانی از React Server Component</li></ul><ul id="29f28e79-a2a5-4fcd-8bf5-9cc755d784f3" class="bulleted-list"><li style="list-style-type:disc">کنترل‌های ارتقا یافته برای React و Vue</li></ul><ul id="25ec411d-601f-400f-8a79-8102631173fd" class="bulleted-list"><li style="list-style-type:disc">پشتیبانی عمیق‌تر و بازنویسی شده از Vite و Vitest و پشتیبانی از Vite 5</li></ul><ul id="e5d0dc83-b656-456b-afc6-742d3c2bc6d4" class="bulleted-list"><li style="list-style-type:disc">دو تا چهار برابر بیلد تستی سریع‌تر</li></ul><ul id="92b51f9e-eea6-4c80-ac87-00465c8b5f89" class="bulleted-list"><li style="list-style-type:disc">دسکتاپ و موبایل UI جدید</li></ul><ul id="d64bf068-38fa-4fe7-84c8-a97fd743dcbb" class="bulleted-list"><li style="list-style-type:disc">حذف وابستگی به ری‌اکت در پروژه‌های غیر ری‌اکتی</li></ul><p id="7ae5835f-0016-4c79-bc68-a765fbbe5c1e" class=""><a href="https://www.youtube.com/watch?v=eUcVttkFAsM">ویدئوی معرفی ورژن جدید</a></p><h2 id="6256726f-4d77-4eb6-a649-2b8e88170fdc" class="">لینک‌ها</h2><p id="4d788feb-f2e1-4d2b-b3ec-45e6d3ae9855" class=""><a href="https://twitter.com/markdalgleish/status/1770224011831890036">پشتیبانی فرست کلس Remix از Vite، پروژه‌های جدید Remix به صورت پیش‌فرض از Vite استفاده می‌کنن</a></p><p id="d1aaaa0f-f004-49fe-9c18-ebe9c1a1fc73" class=""><a href="https://ondrejvelisek.github.io/how-nextjs-breaks-react-fundamentals/">یک مقاله جالب و انتقادی در مورد Next.js و RSC</a></p><p id="6ca8a612-72a3-4d98-8778-2332ee2de7db" class=""><a href="https://www.thisdot.co/blog/how-to-test-react-custom-hooks-and-components-with-vitest">تست کامپوننت‌ها و کاستوم هوک‌ها با Vitest</a></p><p id="c49bde1b-52f3-4f38-b0ea-2f8f4902961c" class=""><a href="https://github.com/pmndrs/uikit">ساخت رابط کاربری در فضای سه بعدی با React و Three.js</a></p><p id="8b84e310-4453-4a7e-bb2a-6f73f53a28af" class=""><a href="https://virgool.io/@hesanam/%D9%85%D9%88%D9%82%D8%B9-%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8-%DA%A9%D8%B1%D8%AF%D9%86-lib-%D9%87%D8%A7-%D8%A8%D9%87-%DA%86%DB%8C-%D8%A8%D8%A7%DB%8C%D8%AF-%D8%AA%D9%88%D8%AC%D9%87-%DA%A9%D9%86%DB%8C%D9%85-j1owhjhna0fi">حسان امینی لو یه مقاله خوب و جامع در مورد روش و فاکتورهای انتخاب پکیج نوشته که پیشنهاد می‌شود به مقدار زیاد</a></p><p id="4a45a9b3-aba2-4bae-b607-909046b9a2cf" class=""><a href="https://lucide.dev/">اگر طرفدار آیکون لایبرری Feather هستید بدونید که توسعش با اسم جدید همچنان ادامه داره، آیکون لایبرری Lucide</a></p><p id="204141d1-fb13-437f-adbd-d9cb6bd14cee" class=""><a href="https://docify.ai4code.io/">اضافه کردن اتوماتیک کامنت و داکیومنتیشن به کد با AI</a></p><p id="50dea370-4595-4467-9de2-b0bc31d4079c" class=""><a href="https://deno.com/blog/jsr_open_beta">معرفی jsr توسط Deno، مخزن پکیج‌های تایپ‌اسکریپتی خام که فقط از ESM پشتیبانی می‌کنه و وظیفه کامپایل کد و ساختن داکیومنت با خودشه یعنی تمرکز منتشرکننده هر پکیج صرفا روی نوشتن کد تایپ‌اسکریپته.</a></p><p id="9feceae5-ca09-45e1-84e7-4b06d18de5f1" class=""><a href="https://vercel.com/blog/ai-sdk-3-generative-ui">معرفی Vercel AI SDK 3.0، استفاده از Server Component ها برای تولید پاسخ‌ها</a></p><p id="ae81a20d-cf71-41db-8737-9187dff6ce1c" class=""><a href="https://www.youtube.com/watch?v=A7QxSTGN0VQ">اپیزود ۱۸۱ از پادکست خوب Frontend First در مورد ورژن بعدی ری‌اکت و React Compiler</a></p><p id="4e7adfaa-d692-44a4-a04d-8dfe0719424f" class=""><a href="https://github.com/OvidijusParsiunas/deep-chat">لایبرری deep-chat، پیاده‌سازی راحت چت AI در وبسایت</a></p><p id="fe6b016d-2836-4da5-9807-965e49ce6cf3" class=""><a href="https://twitter.com/JonasBadalic/status/1765006152150974919?t=j6N09RRH9Rv4rWLTWAckWw&amp;s=19">افزایش قابل ملاحظه سرعت TypeScript با استفاده از Interface به جای Type</a></p><p id="a68e79c8-2e97-4de0-ab07-5b02853fd4be" class=""><a href="https://lexical.dev/">یک تکست ادیتور با کلی امکانات برای وب و iOS از فیسبوک به نام Lexical با 17k استار</a></p><p id="5f454162-8dba-40f7-a79a-063246337340" class=""><a href="https://elysiajs.com/blog/elysia-10">انتشار نسخه 1.0 وب فریمورک ElysiaJS</a></p><p id="603a8fd8-9ea4-4630-ba1f-8141b8482c12" class=""><a href="https://github.com/HeyPuter/puter">اینم از Puter که خودش رو Internet OS معرفی می‌کنه، یه سیستم عامل کامل توی مرورگر</a></p><p id="ad3400f1-1bfd-43f5-b249-75a8116e432c" class=""><a href="https://webhook.site/">تست آنلاین وب‌هوک و دیدن ریکوئست‌ها با webhook.site</a></p><p id="8ad10e62-cc54-4755-839b-98f7f147b829" class=""><a href="https://buildui.com/posts/instant-search-params-with-react-server-components">استفاده از useOptimistic برای تغییر سریع search params در RSC</a></p><p id="03c354e3-4df9-447e-ac35-aee1f33127ae" class=""><a href="https://www.brenelz.com/posts/building-a-react-metaframework-with-vinxi/">اگر سرتون به جایی خورده خدایی نکرده و می‌خواید MetaFramework خودتون رو با Vite بسازید می‌تونید از Vinxi استفاده کنید!</a></p><p id="ba297a9e-6b54-418e-8eee-7c6a9a013fb1" class=""><a href="https://tkdodo.eu/blog/avoiding-hydration-mismatches-with-use-sync-external-store">جلوگیری از ارور Hydration Mismatch با هوک useSyncExternalStore</a></p><p id="1d7749d1-75d2-4704-92cc-25763453daa7" class=""><a href="https://tkdodo.eu/blog/avoiding-hydration-mismatches-with-use-sync-external-store">چطور با Next.js Server Actions در فرم‌ها یک UX خوب بسازیم</a></p><p id="a3f388df-6a53-4a8d-8ee6-8e79032d3b93" class=""><a href="https://www.brenelz.com/posts/learning-four-key-primitives-in-solid/">یک مقاله عالی در مورد عناصر تشکیل دهنده Solid.js که به درد دولوپرهای ری‌اکت هم می‌خوره</a></p><p id="ce48263e-5bcb-42cc-b25f-43b9746a56bb" class=""><a href="https://claritydev.net/blog/nextjs-dynamic-sitemap-pages-app-directory">اضافه کردن Dynamic Sitemap به Next.js</a></p><p id="32d47433-f6e2-44f1-b5f1-906febf4ca28" class=""><a href="https://ishadeed.com/article/css-has-guide/">یه راهنمای عالی و اینترکتیو برای سلکتور :has در CSS</a></p><p id="3cb4de51-635a-4119-a7a7-042d7bfe33aa" class=""><a href="https://developer.chrome.com/blog/new-in-chrome-122/">تغییرات جدید در کروم 122 - Perf DevTools, Storage Buckets, Async Clipboard</a></p><p id="2fce31a9-c2c0-4fc1-b0b2-5babd64672f3" class=""><a href="https://blog.rafaelgss.dev/nodejs-2023-year-in-review">نگاهی به Node.js در سال 2023</a></p><p id="0ed6d127-3d88-4969-9004-388263565306" class=""><a href="https://github.com/parcel-bundler/lightningcss/releases/tag/v1.24.0">ورژن 1.24 LightningCSS</a></p><p id="e91f380c-7957-4c96-9cf1-9a7dcc3d7e40" class=""><a href="https://github.com/mohebifar/react-unforget">یه کامپایلر جدید برای ری‌اکت به اسم React Unforget برای Memoize و Optimize کردن کد ری‌اکتی</a></p><p id="b4204a1b-b85a-4a4f-8f69-8b1be80ba23a" class=""><a href="https://twitter.com/sebmarkbage/status/1765828741500981475">دیپندنسی اینجکشن با package.json!</a></p><p id="1b455f46-e99d-4e3c-a30d-390888178659" class=""><a href="https://developer.chrome.com/blog/next-third-parties">پکیج رسمی Next.js برای مدیریت لایبرری‌های Third-Party</a></p><p id="5f5cd035-7359-4f69-9003-3f86bfc46d90" class=""><a href="https://sinja.io/blog/build-typesafe-react-router-from-scratch">ساخت یک روتر تایپ‌سیف React با 500 خط کد</a></p><p id="bc1b392d-7743-4e1c-8134-4a439493c261" class=""><a href="https://github.com/chakra-ui/panda/discussions/2274">ورژن PandaCSS 0.33.0</a></p><p id="2be0e7b9-cd91-4069-86da-6e2080da569b" class=""><a href="https://github.com/TanStack/query/releases/tag/v5.25.0">ورژن 5.25.0 React Query</a></p><p id="d9b64000-cdf6-4af1-955a-0d4c24372b41" class=""><a href="https://input-otp.rodz.dev/">کامپوننت ورود OTP برای React</a></p><p id="220d79c0-63ea-49a1-b1e1-69f7f574d279" class=""><a href="https://github.com/TanStack/router/releases/tag/v1.18.0">ورژن 1.18 TanStack Router</a></p><p id="a681219a-229e-4e06-8f8f-fe48189a2003" class=""><a href="https://remix.run/docs/en/main/start/changelog#v280">ورژن 2.8.0 Remix</a></p><p id="9f6d2a7c-c2f0-4c9e-bdb0-491373c2691b" class=""><a href="https://uvcanvas.com/">ساخت گرادینت‌های زیبا با کانواس</a></p><p id="af8106ac-fd25-4a0a-a257-e389f4314a84" class=""><a href="https://ui.shadcn.com/docs/changelog">نسخه جدید Shadcn/ui با کامپوننت‌های جدید شامل Breadcrumb، One-Time-Password Input</a></p><p id="8f4f75ca-5668-43b2-933b-f49a5d3f721b" class=""><a href="https://github.com/kristiandupont/react-geiger">شناسایی ری‌رندرهای React با گوز که البته می‌تونه خیلی کاربردی باشه!</a></p><h2 id="98a7cf63-528c-4f87-b1b8-a865432ea7eb" class="">یوتیوب گردی</h2><ul id="87b8666c-5b9a-4b2e-9ff6-f8582f1c0756" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.youtube.com/watch?v=dxWLp-8mXes">Ryan Toronto - Asset loading in React 19</a></li></ul><ul id="13b7ae31-0a8c-41ff-a091-5901511c6dea" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.youtube.com/watch?v=VLk45JBe8L8">Jack Herrington - React Hook Form &amp; React 19 Form Actions, The Right Way</a></li></ul><ul id="6d268227-bb9b-43bf-b340-7bcfc9d8e13d" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.youtube.com/watch?v=4k6Xgjqkad4">Fireship - They made React great again? (React Labs)</a></li></ul><ul id="4ac020c3-234a-4fbf-b7a6-5763c601ead7" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.youtube.com/watch?v=RPa3_AD1_Vs">Fireship - This UI component library is mind-blowing (Aceternity Components)</a></li></ul><ul id="92bd7577-17d3-4d4c-a6f6-2a51ce01f39f" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.youtube.com/watch?v=LMTJPKD0lQw">Theo - New JS Framework Just Dropped (TanStack Start)</a></li></ul><ul id="8cbc8079-5e10-4b2d-bc0d-4ec0ec9b8841" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.pronextjs.dev/tutorials/forms-management-with-next-js-app-router">Jack Herrington - Forms Management with Next.js App Router</a></li></ul><ul id="97b6ad75-8e17-469c-93af-89995d23766f" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.youtube.com/watch?v=CTgQhNFqn5E">Daniel Kanem - Understanding the Steps of Migrating Your Remix App to Vite.js</a></li></ul><ul id="f14f5cc2-0d09-452b-abfe-532c58b771b3" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.youtube.com/watch?v=EO_-KwSslWQ">Brooks Lybrand - Deploying Remix to GitHub Pages</a></li></ul><ul id="10a59bdd-3825-45d6-8aa0-a7853ff46a6b" class="bulleted-list"><li style="list-style-type:disc"><a href="https://youtu.be/fcY9TthQnI4?si=bROdHJmIumw24AlO">Theo Browne - Million Lint</a></li></ul><ul id="f239c154-bbeb-47dd-be6c-94e3d5ae0327" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.youtube.com/watch?v=m4QbeS9BTNU">UI Engineering - Goodbye, forwardRef</a></li></ul><ul id="e29fe83c-ee73-4be0-80a0-250364227bdc" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.youtube.com/watch?v=fyja_ldjxwA">Jack Herrington - Pigment-CSS: Material-UI Fixed on NextJS and React 19</a></li></ul><h2 id="642f3abc-9f3a-4e18-a0c0-07e0146c029b" class="">هویج فان</h2><figure id="15c6a02a-1b69-451e-8900-0c5adc89aed1" class="image"><a class="hide-link" href="./assets/meme.png"><img src="./assets/meme.png"/></a></figure><h3 id="da6caaae-9d38-4162-b7a8-cfd18378432b" class=""><mark class="highlight-purple">تهیه شده توسط:</mark></h3><p id="c3a6d8fa-05b6-4807-b689-9631aba84513" class=""><a href="https://zaya.io/71yvh" class="hide-link"><mark class="highlight-gray">محمود صاحبی</mark></a><mark class="highlight-gray">، </mark><a class="hide-link" href="https://zaya.io/k4lwx"><mark class="highlight-gray">محمد ایزنلو</mark></a><mark class="highlight-gray"> و </mark><a class="hide-link" href="https://zaya.io/0hehx"><mark class="highlight-gray">صالح شجاعی</mark></a></p><hr id="a680d869-fc83-4edb-963e-04423586130c"/><div id="fc470acc-8f2d-4a9a-8ed4-f7341d24282e" class="column-list"><div id="405ab6d7-8c2a-4c30-890f-94c62a06db37" style="width:25%" class="column"><p id="dc89cafc-f0d5-4142-8cd0-3925a161a186" class=""><mark class="highlight-teal">فروردین ماه ۱۴۰۲</mark></p></div><div id="f213bf5b-85d6-40fc-90af-a601c6e92604" style="width:25%" class="column"><p id="9e750458-ddc6-4fe8-ad0f-ddcf7e5b6769" class=""><a class="hide-link" href="https://zaya.io/r01fi"><mark class="highlight-orange">سایت فرانت‌چپتر</mark></a></p></div><div id="0bd47afd-314d-441f-91ef-3047694b8213" style="width:25%" class="column"><p id="c7d8e4c6-0d64-4bf6-afd4-996c025c44cb" class=""><a class="hide-link" href="https://zaya.io/3yx4u"><mark class="highlight-orange">کانال</mark></a><mark class="highlight-orange"> و </mark><a class="hide-link" href="https://zaya.io/3x8py"><mark class="highlight-orange">گروه فرانت‌چپتر</mark></a></p></div><div id="11bf5cf5-7612-4ee0-acc6-9bcd2f8e5d7f" style="width:25%" class="column"><p id="cfcbce34-699c-45b7-93d9-7b28a772d518" class=""><a class="hide-link" href="https://xwork.ir/"><strong>اسپانسر: ایکس‌ورک</strong></a></p></div></div><p id="41089700-b6bd-4f73-800d-2d64253070f6" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

@@ -10,7 +10,11 @@ body {
   white-space: normal;
   line-break: strict;
   padding: 1em !important;
-  color: #dedede !important;
+}
+
+video {
+  max-width: 50rem;
+  height: auto;
 }
 
 a, a.visited {
@@ -23,6 +27,10 @@ a:hover, a:active {
 
 a::after, a.visited::after {
   content: ' 🔗';
+}
+
+a.hide-link::after {
+  content: none;
 }
 
 .column {
