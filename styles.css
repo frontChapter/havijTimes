@@ -34,7 +34,7 @@ a.hide-link::after {
 }
 
 .column {
-  padding: 1em !important;
+  padding: 0 1em !important;
 }
 
 pre {
